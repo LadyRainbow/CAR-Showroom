@@ -1,0 +1,223 @@
+@media (max-width: 1199px) {
+    h1 {
+        font-size: 34px;
+        line-height: 38px;
+    }
+    .header-data-place, .header-data-time {
+        display: none;
+    }
+    .shadow, .slick-slide {
+        box-shadow: none;
+    }
+}
+@media (max-width: 991px) {
+    .app {
+        padding-bottom: 430px;
+    }
+    header {
+        padding-top: 52px;
+        padding-bottom: 0;
+        .navbar-expand-lg > .container, .navbar-expand-lg > .container-fluid {
+            max-width: 100%;
+        }
+        .logo-header {
+            padding-left: 15px;
+        }
+        .navbar-nav {
+            color: $textDark;
+            font-family: 'MuseoSansCyrl-900';
+            font-size: 24px;
+            padding-top: 68px;
+            .nav-item + .nav-item {
+                margin-top: 20px;
+            }
+        }
+    }
+    .nav-item + .nav-item {
+        margin-left: 0;
+    }
+    .header-data-phone-desctop {
+        display: none;
+    }
+    .header-data-phone-mob {
+        display: block;
+        height: 22px;
+    }
+    .callback-btn-header {
+        display: none;
+    }
+    .callback-btn-header-collapse {
+        display: flex;
+        margin: 0 auto;
+        margin-top: 34px;
+        margin-bottom: 80px;
+    }
+    .links-line-nav-wrp {
+        text-align: center;
+        background-color: #ffffff;
+    }
+    .links-line-nav {
+        min-height: inherit;
+    }
+    .main-line-nav {
+        top: 0;
+        height: 52px;
+        box-shadow: 0px 10px 100px 0px rgba(0, 0, 0, 0.12);
+        border-bottom: none;
+    }
+    footer {
+        height: inherit;
+        padding-bottom: 30px;
+    }
+    // MAIN
+    h1 {
+        padding-top: 40px;
+        margin-bottom: 19px;
+    }
+    .main-img {
+        transform: translateY(-24px);
+    }
+    .filter-block {
+        padding-right: 80px;
+        margin-top: -55px;
+    }
+    .select2-container {
+        width: 100% !important;
+    }
+    .selectize-control.single .selectize-input {
+        width: 100%;
+    }
+    .polzunok-wrp {
+        width: 100%;
+    }
+    .choose-auto-btn {
+        margin: 0 auto;
+        margin-top: 54px;
+        width: 100%;
+    }
+    .filter-block-item {
+        margin-top: 28px;
+    }
+    .marks h2 {
+        margin-bottom: 0;
+    }
+    .letter-block {
+        margin-top: 22px;
+    }
+    .form-car {
+        left: -130px;
+    }
+    .propose-card {
+        width: 255px;
+        margin-bottom: 40px;
+        .propose-card-img-wrp {
+            min-height: 182px;
+        }
+        .propose-card-info {
+            padding-left: 19px;
+            height: 301px;
+        }
+        .bottom-part {
+            flex-direction: column;
+            bottom: 40px;
+            align-items: flex-start;
+            padding-left: 20px;
+            .propose-card-price {
+                margin-bottom: 18px;
+            }
+            .propose-card-btn {
+                width: 215px;
+            }
+        }
+    }
+    .arrivals-card {
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 767px) {
+    h1 {
+        font-size: 34px;
+        line-height: 1;
+    }
+    h2 {
+        font-size: 24px;
+        line-height: 1;
+    }
+    .app {
+        padding-bottom: 553px;
+    }
+    footer {
+        .callback-btn {
+            margin-top: 42px;
+        }
+        .warning {
+            margin-top: 29px;
+        }
+    }
+    // MAIN
+    .main-img {
+        transform: translateY(0px);
+        margin-top: 30px;
+    }
+    .filter-block {
+        margin-top: -75px;
+    }
+    .form-block-wrp {
+        margin-top: 190px;
+    }
+    .form-car {
+        top: -180px;
+        width: 70%;
+        left: 15%;
+    }
+}
+@media (max-width: 498px) {
+    .app {
+        padding-bottom: 571px;
+    }
+}
+@media (max-width: 479px) {
+    .filter-block-wrp {
+        padding-bottom: 60px;
+    }
+    .filter-block {
+        padding-left: 19px;
+        padding-right: 19px;
+        padding-top: 20px;
+        padding-bottom: 46px;
+    }
+    .form-car {
+        top: -150px;
+    }
+    .slick-initialized .slick-slide {
+        display: block;
+    }
+    .propose-slider-container, .arrivals-slider-container {
+        padding-right: 0;
+    }
+    .slick-list {padding:0 20% 0 0;}
+    .all-proposals-btn, .all-arrivals-btn {
+        width: 100%;
+    }
+}
+@media (max-width: 422px) {
+    .app {
+        padding-bottom: 589px;
+    }
+}
+@media (max-width: 400px) {
+    .app {
+        padding-bottom: 607px;
+    }
+}
+@media (max-width: 357px) {
+    .app {
+        padding-bottom: 625px;
+    }
+}
+@media (max-width: 332px) {
+    .app {
+        padding-bottom: 643px;
+    }
+    .slick-list{padding:0 10% 0 0;}
+}

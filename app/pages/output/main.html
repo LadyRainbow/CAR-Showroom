@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Car showroom</title>
+  <link rel="shortcut icon" type="image/png" href="https://auto.ndtvimg.com/car-images/medium/maruti-suzuki/alto-800/maruti-suzuki-alto-800.jpg?v=1_1"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+   <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="../../build/css/bootstrap.css">
+  <link rel="stylesheet" href="../../build/css/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="../../build/css/selectize.css">
+  <link rel="stylesheet" href="../../build/css/YouTubePopUp.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../../build/css/style.css">
+</head>
+<body>
+    <div class="app">
+        <div class="menu-wrapper">
+            
+        </div>
+        <div class="header-wrapper">
+            <header>
+    <nav class="navbar navbar-expand-lg links-line-nav-wrp">
+        <div class="container">
+            <div class="collapse navbar-collapse links-line-nav" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Машины в наличии<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Кредит</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Выкуп</a>
+                </li>
+                <li class="nav-item">
+                 <a class="nav-link" href="#">Trade-in</a>
+                </li>
+                <li class="nav-item">
+                 <a class="nav-link" href="#">Контакты</a>
+                </li>
+              </ul>
+              <div class="callback-btn callback-btn-header-collapse"><span>Обратный звонок</span></div>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg main-line-nav">
+     <div class="container">
+          <a class="navbar-brand logo-header" href="#"><span>Авто</span>салон</a>
+          <div class="header-data header-data-phone header-data-phone-desctop">
+              <p class="main-header-data">+7 495 123 45 67</p>
+          </div>
+          <a href="tel:+74951234567" class="header-data header-data-phone header-data-phone-mob">
+          </a>
+          <div class="header-data header-data-time">
+              <p class="main-header-data">с 9:00 до 20:00</p>
+              <p class="secondary-header-data">ежедневно</p>
+          </div>
+          <div class="header-data header-data-place">
+              <p class="main-header-data">Братиславская</p>
+              <p class="secondary-header-data">ул. Поречная 12, стр.1, 4 этаж</p>
+          </div>
+          <div class="callback-btn callback-btn-header"><span>Обратный звонок</span></div>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+           <span></span>
+         </button>
+     </div>
+    </nav>
+</header>
+
+        </div>
+
+        <div class="pages-wrapper">
+            <main>
+    <section class="main-screen">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <h1>250&nbsp;автомобилей с&nbsp;пробегом</h1>
+                    <p class="intro">Все автомобили прошли полную <br> диагностику, юридическую проверку <br> и предпродажную подготовку</p>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <img class="main-img" src="../../build/img/main-img.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="filter-block-wrp">
+        <div class="container">
+            <div class="filter-block">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-6">
+                        <div class="filter-block-item">
+                            <p class="filter-title">Марка и модель</p>
+                            <select class="select-multiple dropdownCssClass" name="cars[]" multiple="multiple">
+                              <option value="AL">Alabama</option>
+                              <option value="WY">Wyoming</option>
+                            </select>
+                        </div>
+                        <div class="filter-block-item">
+                            <p class="filter-title">Год выпуска, от</p>
+                            <select class="select-simple" name="cars[]" placeholder="Выберите год">
+                              <option value="1">1980</option>
+                              <option value="2">1970</option>
+                            </select>
+                        </div>
+                        <div class="filter-block-item">
+                            <p class="filter-title">Привод</p>
+                            <select class="select-simple" name="cars[]" placeholder="Выберите тип привода">
+                              <option value="1">Передний</option>
+                              <option value="2">Задний</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6">
+                        <div class="filter-block-item">
+                            <p class="filter-title">Цена, руб</p>
+                            <div class="polzunok-wrp">
+                                <p class="polzunok-value">до <span id="result-polzunok-price"></span> <span>руб</span></p>
+                                <div id="polzunok-price" class="polzunok"></div>
+                            </div>
+                        </div>
+                        <div class="filter-block-item">
+                            <p class="filter-title">Коробка передач</p>
+                            <select class="select-simple" name="cars[]" placeholder="Выберите тип КП">
+                              <option value="1">Механическая</option>
+                              <option value="2">Автоматическая</option>
+                            </select>
+                        </div>
+                        <div class="filter-block-item">
+                            <p class="filter-title">Мощность, л.с.</p>
+                            <div class="polzunok-wrp">
+                                <p class="polzunok-value">до <span id="result-polzunok-power"></span> <span>л.с.</span></p>
+                                <div id="polzunok-power" class="polzunok"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 offset-xl-0 col-lg-6 offset-lg-3">
+                        <div class="filter-block-item">
+                            <p class="filter-title">Кузов</p>
+                            <select class="select-simple" name="cars[]" placeholder="Выберите тип кузова">
+                              <option value="1">Седан</option>
+                              <option value="2">Хэтчбек</option>
+                            </select>
+                        </div>
+                        <div class="filter-block-item">
+                            <p class="filter-title">Двигатель</p>
+                            <select class="select-simple" name="cars[]" placeholder="Выберите тип двигателя">
+                              <option value="1">бензиновые</option>
+                              <option value="2">дизельные</option>
+                            </select>
+                        </div>
+                        <div class="choose-auto-btn"><span>ПОДОБРАТЬ АВТОМОБИЛЬ</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="marks">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Список марок</h2>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="letter-block" data-target="a">
+                        <div class="mark-item-wrp">
+                            <a href="#" class="mark-item" data-target="5">Audi</a>
+                        </div>
+                    </div>
+                    <div class="letter-block" data-target="b">
+                        <div class="mark-item-wrp">
+                            <a href="#" class="mark-item" data-target="7">BMW</a>
+                        </div>
+                    </div>
+                    <div class="letter-block" data-target="c">
+                        <div class="mark-item-wrp">
+                            <a href="#" class="mark-item" data-target="5">Chevrolet</a>
+                        </div>
+                        <div class="mark-item-wrp">
+                            <a href="#" class="mark-item" data-target="15">Citroen</a>
+                        </div>
+                    </div>
+                    <div class="letter-block" data-target="d">
+                        <div class="mark-item-wrp">
+                            <a href="#" class="mark-item" data-target="5">Daewoo </a>
+                        </div>
+                        <div class="mark-item-wrp">
+                            <a href="#" class="mark-item" data-target="15">Dodge</a>
+                        </div>
+                    </div>
+                    <div class="letter-block" data-target="f">
+                        <div class="mark-item-wrp">
+                            <a href="#" class="mark-item" data-target="5">Fiat</a>
+                        </div>
+                        <div class="mark-item-wrp">
+                            <a href="#" class="mark-item" data-target="15">Ford</a>
+                        </div>
+                    </div>
+                    <div class="letter-block"  data-target="g">
+                        <div class="mark-item-wrp">
+                            <a href="#" class="mark-item" data-target="4">Great Wall</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="letter-block"  data-target="h">
+                        <div class="mark-item-wrp">
+                            <a href="#" class="mark-item" data-target="1">Honda</a>
+                        </div>
+                        <div class="mark-item-wrp">
+                            <a href="#" class="mark-item" data-target="27">Hyundai</a>
+                        </div>
+                    </div>
+                    <div class="letter-block"  data-target="k">
+                        <div class="mark-item-wrp">
+                            <a href="#" class="mark-item" data-target="5">Kia</a>
+                        </div>
+                    </div>
+                    <div class="letter-block"  data-target="l">
+                        <div class="mark-item-wrp">
+                            <a href="#" class="mark-item" data-target="1">LADA (ВАЗ)</a>
+                        </div>
+                        <div class="mark-item-wrp">
+                            <a href="#" class="mark-item" data-target="4">Lifan</a>
+                        </div>
+                    </div>
+                    <div class="letter-block"  data-target="m">
+                        <div class="mark-item-wrp">
+                            <a href="#" class="mark-item" data-target="7">Mazda (ВАЗ)</a>
+                        </div>
+                        <div class="mark-item-wrp">
+                            <a href="#" class="mark-item" data-target="3">Mercedes-Benz</a>
+                        </div>
+                        <div class="mark-item-wrp">
+                            <a href="#" class="mark-item" data-target="6">Mitsubishi</a>
+                        </div>
+                    </div>
+                    <div class="letter-block"  data-target="n">
+                        <div class="mark-item-wrp">
+                            <a href="#" class="mark-item" data-target="21">Nissan</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="letter-block"  data-target="o">
+                        <div class="mark-item-wrp">
+                            <a href="#" class="mark-item" data-target="13">Opel</a>
+                        </div>
+                    </div>
+                    <div class="letter-block"  data-target="p">
+                        <div class="mark-item-wrp">
+                            <a href="#" class="mark-item" data-target="4">Peugeot</a>
+                        </div>
+                        <div class="mark-item-wrp">
+                            <a href="#" class="mark-item" data-target="2">Porsche</a>
+                        </div>
+                    </div>
+                    <div class="letter-block"  data-target="r">
+                        <div class="mark-item-wrp">
+                            <a href="#" class="mark-item" data-target="7">Renault</a>
+                        </div>
+                    </div>
+                    <div class="letter-block"  data-target="s">
+                        <div class="mark-item-wrp">
+                            <a href="#" class="mark-item" data-target="1">SEAT</a>
+                        </div>
+                        <div class="mark-item-wrp">
+                            <a href="#" class="mark-item" data-target="9">Skoda</a>
+                        </div>
+                        <div class="mark-item-wrp">
+                            <a href="#" class="mark-item" data-target="3">SsangYong</a>
+                        </div>
+                        <div class="mark-item-wrp">
+                            <a href="#" class="mark-item" data-target="2">Subaru</a>
+                        </div>
+                        <div class="mark-item-wrp">
+                            <a href="#" class="mark-item" data-target="6">Suzuki</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="letter-block"  data-target="t">
+                        <div class="mark-item-wrp">
+                            <a href="#" class="mark-item" data-target="7">Toyota</a>
+                        </div>
+                    </div>
+                    <div class="letter-block"  data-target="v">
+                        <div class="mark-item-wrp">
+                            <a href="#" class="mark-item" data-target="15">Volkswagen</a>
+                        </div>
+                        <div class="mark-item-wrp">
+                            <a href="#" class="mark-item" data-target="3">Vortex</a>
+                        </div>
+                    </div>
+                    <div class="letter-block"  data-target="У">
+                        <div class="mark-item-wrp">
+                            <a href="#" class="mark-item" data-target="4">УАЗ</a>
+                        </div>
+                    </div>
+                    <div class="all-models-wrp d-none d-sm-block">
+                        <div class="decor-number"><span>253</span></div>
+                        <a href="#" class="all-models-link">ВСЕ машины</a>
+                    </div>
+                </div>
+                <div class="col-12 d-block d-sm-none">
+                    <div class="all-models-wrp">
+                        <div class="decor-number"><span>253</span></div>
+                        <a href="#" class="all-models-link">ВСЕ машины</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="propose">
+        <div class="container">
+            <div class="row">
+                <div class="col-9">
+                    <h2>Спецпредложения</h2>
+                </div>
+                <div class="col-3">
+                    <div class="slider-arrows-wrp">
+                        <div id="propose-arrow-prev" class="arrow-slider arrow-prev"></div>
+                        <div id="propose-arrow-next" class="arrow-slider arrow-next"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="propose-slider-wrp">
+            <div class="container propose-slider-container">
+                <div class="propose-slider">
+                    <div>
+                        <div class="propose-card">
+                            <div class="propose-card-img-wrp">
+                                <div class="change-img-trigger change-img-trigger-1 active"></div>
+                                <img class="change-img" src="../../build/img/car1.jpg" alt="">
+                                <div class="change-img-trigger change-img-trigger-2"></div>
+                                <img class="change-img" src="../../build/img/car2.jpg" alt="">
+                                <div class="change-img-trigger change-img-trigger-3"></div>
+                                <img class="change-img" src="../../build/img/car3.jpg" alt="">
+                                <div class="change-img-trigger change-img-trigger-4"></div>
+                                <img class="change-img" src="../../build/img/car4.jpg" alt="">
+                            </div>
+                            <div class="propose-card-info">
+                                <p class="propose-card-title">Chevrolet Captiva 2008</p>
+                                <div class="icons-wrp">
+                                    <div class="icons">
+                                        <p><img class="icon-propose-img" src="../../build/img/speedometer.svg" alt=""><span>122 000 км</span></p>
+                                        <p><img class="icon-propose-img" src="../../build/img/engine.svg" alt=""><span>2,4 л</span></p>
+                                    </div>
+                                    <div class="icons">
+                                        <p><img class="icon-propose-img" src="../../build/img/fuel.svg" alt=""><span>Бензин</span></p>
+                                        <p><img class="icon-propose-img" src="../../build/img/meh.svg" alt=""><span>Механика</span></p>
+                                    </div>
+                                </div>
+                                <div class="bottom-part">
+                                    <p class="propose-card-price">369 000 руб</p>
+                                    <div class="propose-card-btn"><span>заявка в кредит</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="propose-card">
+                            <div class="propose-card-img-wrp">
+                                <div class="change-img-trigger change-img-trigger-1 active"></div>
+                                <img class="change-img" src="../../build/img/car1.jpg" alt="">
+                                <div class="change-img-trigger change-img-trigger-2"></div>
+                                <img class="change-img" src="../../build/img/car2.jpg" alt="">
+                                <div class="change-img-trigger change-img-trigger-3"></div>
+                                <img class="change-img" src="../../build/img/car3.jpg" alt="">
+                                <div class="change-img-trigger change-img-trigger-4"></div>
+                                <img class="change-img" src="../../build/img/car4.jpg" alt="">
+                            </div>
+                            <div class="propose-card-info">
+                                <p class="propose-card-title">Chevrolet Captiva 2008</p>
+                                <div class="icons-wrp">
+                                    <div class="icons">
+                                        <p><img class="icon-propose-img" src="../../build/img/speedometer.svg" alt=""><span>122 000 км</span></p>
+                                        <p><img class="icon-propose-img" src="../../build/img/engine.svg" alt=""><span>2,4 л</span></p>
+                                    </div>
+                                    <div class="icons">
+                                        <p><img class="icon-propose-img" src="../../build/img/fuel.svg" alt=""><span>Бензин</span></p>
+                                        <p><img class="icon-propose-img" src="../../build/img/meh.svg" alt=""><span>Механика</span></p>
+                                    </div>
+                                </div>
+                                <div class="bottom-part">
+                                    <p class="propose-card-price">369 000 руб</p>
+                                    <div class="propose-card-btn"><span>заявка в кредит</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="propose-card">
+                            <div class="propose-card-img-wrp">
+                                <div class="change-img-trigger change-img-trigger-1 active"></div>
+                                <img class="change-img" src="../../build/img/car1.jpg" alt="">
+                                <div class="change-img-trigger change-img-trigger-2"></div>
+                                <img class="change-img" src="../../build/img/car2.jpg" alt="">
+                                <div class="change-img-trigger change-img-trigger-3"></div>
+                                <img class="change-img" src="../../build/img/car3.jpg" alt="">
+                                <div class="change-img-trigger change-img-trigger-4"></div>
+                                <img class="change-img" src="../../build/img/car4.jpg" alt="">
+                            </div>
+                            <div class="propose-card-info">
+                                <p class="propose-card-title">Chevrolet Captiva 2008</p>
+                                <div class="icons-wrp">
+                                    <div class="icons">
+                                        <p><img class="icon-propose-img" src="../../build/img/speedometer.svg" alt=""><span>122 000 км</span></p>
+                                        <p><img class="icon-propose-img" src="../../build/img/engine.svg" alt=""><span>2,4 л</span></p>
+                                    </div>
+                                    <div class="icons">
+                                        <p><img class="icon-propose-img" src="../../build/img/fuel.svg" alt=""><span>Бензин</span></p>
+                                        <p><img class="icon-propose-img" src="../../build/img/meh.svg" alt=""><span>Механика</span></p>
+                                    </div>
+                                </div>
+                                <div class="bottom-part">
+                                    <p class="propose-card-price">369 000 руб</p>
+                                    <div class="propose-card-btn"><span>заявка в кредит</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="propose-card">
+                            <div class="propose-card-img-wrp">
+                                <div class="change-img-trigger change-img-trigger-1 active"></div>
+                                <img class="change-img" src="../../build/img/car1.jpg" alt="">
+                                <div class="change-img-trigger change-img-trigger-2"></div>
+                                <img class="change-img" src="../../build/img/car2.jpg" alt="">
+                                <div class="change-img-trigger change-img-trigger-3"></div>
+                                <img class="change-img" src="../../build/img/car3.jpg" alt="">
+                                <div class="change-img-trigger change-img-trigger-4"></div>
+                                <img class="change-img" src="../../build/img/car4.jpg" alt="">
+                            </div>
+                            <div class="propose-card-info">
+                                <p class="propose-card-title">Chevrolet Captiva 2008</p>
+                                <div class="icons-wrp">
+                                    <div class="icons">
+                                        <p><img class="icon-propose-img" src="../../build/img/speedometer.svg" alt=""><span>122 000 км</span></p>
+                                        <p><img class="icon-propose-img" src="../../build/img/engine.svg" alt=""><span>2,4 л</span></p>
+                                    </div>
+                                    <div class="icons">
+                                        <p><img class="icon-propose-img" src="../../build/img/fuel.svg" alt=""><span>Бензин</span></p>
+                                        <p><img class="icon-propose-img" src="../../build/img/meh.svg" alt=""><span>Механика</span></p>
+                                    </div>
+                                </div>
+                                <div class="bottom-part">
+                                    <p class="propose-card-price">369 000 руб</p>
+                                    <div class="propose-card-btn"><span>заявка в кредит</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <a href="#" class="all-proposals-btn"><span>ВСЕ СПЕЦПРЕДЛОЖЕНИЯ</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="latest-arrivals">
+        <div class="container">
+            <div class="row">
+                <div class="col-9">
+                    <h2>Последние поступления</h2>
+                </div>
+                <div class="col-3">
+                    <div class="slider-arrows-wrp">
+                        <div id="arrivals-arrow-prev" class="arrow-slider arrow-prev"></div>
+                        <div id="arrivals-arrow-next" class="arrow-slider arrow-next"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="arrivals-slider-wrp">
+            <div class="container arrivals-slider-container">
+                <div class="arrivals-slider">
+                    <div>
+                        <div class="arrivals-card">
+                            <div class="arrivals-card-img-wrp">
+                                <img class="arrivals-img" src="../../build/img/car1.jpg" alt="">
+                            </div>
+                            <div class="arrivals-card-info">
+                                <p class="arrivals-card-title">Chevrolet Captiva 2008</p>
+                                <div class="arrivals-data">
+                                    <p>Год выпуска: <span>2007</span></p>
+                                    <p>Пробег: <span>111 000 км</span></p>
+                                </div>
+                                <p class="arrivals-card-price">369 000 руб</p>
+                                <div class="arrivals-card-btn"><span>заявка в кредит</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="arrivals-card">
+                            <div class="arrivals-card-img-wrp">
+                                <img class="arrivals-img" src="../../build/img/car1.jpg" alt="">
+                            </div>
+                            <div class="arrivals-card-info">
+                                <p class="arrivals-card-title">Chevrolet Captiva 2008</p>
+                                <div class="arrivals-data">
+                                    <p>Год выпуска: <span>2007</span></p>
+                                    <p>Пробег: <span>111 000 км</span></p>
+                                </div>
+                                <p class="arrivals-card-price">369 000 руб</p>
+                                <div class="arrivals-card-btn"><span>заявка в кредит</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="arrivals-card">
+                            <div class="arrivals-card-img-wrp">
+                                <img class="arrivals-img" src="../../build/img/car1.jpg" alt="">
+                            </div>
+                            <div class="arrivals-card-info">
+                                <p class="arrivals-card-title">Captiva 2008</p>
+                                <div class="arrivals-data">
+                                    <p>Год выпуска: <span>2007</span></p>
+                                    <p>Пробег: <span>111 000 км</span></p>
+                                </div>
+                                <p class="arrivals-card-price">369 000 руб</p>
+                                <div class="arrivals-card-btn"><span>заявка в кредит</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="arrivals-card">
+                            <div class="arrivals-card-img-wrp">
+                                <img class="arrivals-img" src="../../build/img/car1.jpg" alt="">
+                            </div>
+                            <div class="arrivals-card-info">
+                                <p class="arrivals-card-title">Chevrolet Captiva 2008</p>
+                                <div class="arrivals-data">
+                                    <p>Год выпуска: <span>2007</span></p>
+                                    <p>Пробег: <span>111 000 км</span></p>
+                                </div>
+                                <p class="arrivals-card-price">369 000 руб</p>
+                                <div class="arrivals-card-btn"><span>заявка в кредит</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="arrivals-card">
+                            <div class="arrivals-card-img-wrp">
+                                <img class="arrivals-img" src="../../build/img/car1.jpg" alt="">
+                            </div>
+                            <div class="arrivals-card-info">
+                                <p class="arrivals-card-title">Chevrolet Captiva 2008</p>
+                                <div class="arrivals-data">
+                                    <p>Год выпуска: <span>2007</span></p>
+                                    <p>Пробег: <span>111 000 км</span></p>
+                                </div>
+                                <p class="arrivals-card-price">369 000 руб</p>
+                                <div class="arrivals-card-btn"><span>заявка в кредит</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <a href="#" class="all-arrivals-btn"><span>ВСЕ поступления</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="order-form-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-6 col-12">
+                    <h2>Автомобили с&nbsp;пробегом без&nbsp;рисков</h2>
+                    <div class="promo-text">
+                        <p>Покупка подержанного авто у нас — это гарантия того, что вы получите автомобиль без каких-либо технических неисправностей, с комплектом необходимых документов и исчерпывающей информацией о его предыдущих владельцах.</p>
+                        <p>Прежде чем совершить сделку, вы всегда можете проверить работоспособность всех систем транспортного средства
+                        в специализированном сервисе, а также лично испытать машину на тест-драйве. Все предлагаемые нами автомобили с пробегом проходят тщательный технический осмотр и полную юридическую проверку.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 offset-lg-3 col-md-6 offset-md-0 col-12">
+                    <div class="form-block-wrp">
+                        <img class="form-car" src="../../build/img/form-img.png" alt="авто">
+                        <div class="form-block">
+                            <p class="form-block-title">У вас есть вопросы?</p>
+                            <p class="form-block-title form-block-title-secondary">Отправьте нам заявку!</p>
+                            <div class="form-block-field">
+                                <p class="form-block-subtitle">Имя</p>
+                                <input type="text" class="form-block-input">
+                            </div>
+                            <div class="form-block-field">
+                                <p class="form-block-subtitle">Телефон</p>
+                                <input type="text" class="form-block-input">
+                            </div>
+                            <div class="send-form-btn"><span>ОТПРАВИТЬ</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+        </div>
+        <div class="footer-wrapper">
+            <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 offset-md-0 col-sm-6 offset-sm-0 col-10 offset-2">
+                <a class="logo-footer" href="#"><span>Авто</span>салон</a>
+                <div class="footer-data footer-data-phone footer-data-phone-desctop d-none d-sm-block">
+                    <p class="main-footer-data">+7 495 123 45 67</p>
+                </div>
+                <a href="tel:+74951234567" class="footer-data footer-data-phone footer-data-phone-mob d-block d-sm-none">
+                    <p class="main-footer-data">+7 495 123 45 67</p>
+                </a>
+                <div class="footer-data footer-data-time">
+                    <p class="main-footer-data">с 9:00 до 20:00</p>
+                    <p class="secondary-footer-data">ежедневно</p>
+                </div>
+                <div class="footer-data footer-data-place">
+                    <p class="main-footer-data">Братиславская</p>
+                    <p class="secondary-footer-data">ул. Поречная 12, стр.1, 4 этаж</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-5 offset-md-0 offset-sm-1 d-none d-sm-block">
+                <ul class="footer-nav-list">
+                    <li><a href="#">Машины в наличии</a></li>
+                    <li><a href="#">Кредит</a></li>
+                    <li><a href="#">Выкуп</a></li>
+                    <li><a href="#">Trade-in</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 offset-sm-0 col-10 offset-2">
+                <div class="callback-btn"><span>Обратный звонок</span></div>
+                <p class="warning">Обращаем ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями ч. 2 ст. 437 Гражданского кодекса Российской Федерации. Для получения подробной информации о стоимости автомобилей, пожалуйста, обращайтесь к менеджерам автосалона.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        </div>
+        <div class="pop-up-overlay-wrapper">
+            <div class="overlay-pop-up"></div>
+            <div class="pop-up-wrapper">
+    <div class="pop-up-add-call">
+        <h4 class="pop-up-title">Заказать звонок</h4>
+        <form action="#">
+            <div class="field field-pop-up-add-call">
+                <p>Имя*</p>
+                <input class="input-sections input-pop-up-add-call" type="text" name="name" value="">
+            </div>
+            <div class="field field-pop-up-add-call">
+                <p>Телефон*</p>
+                <input class="input-sections input-pop-up-add-call" type="tel" name="phone" value="">
+            </div>
+            <div class="button-checkbox-wrp button-sections-wrp">
+                <label class="checkbox checkbox-agree">
+                    <input type="checkbox" />
+                    <div class="checkbox__text"><span>Даю согласие на обработку <a href="#">персональных данных</a></span></div>
+                </label>
+                <input class="button input-sections input-pop-up-add-call button-disabled" type="submit" name="button" value="Отправить заявку" disabled>
+            </div>
+        </form>
+        <div class="pop-up-add-call-close-btn"></div>
+    </div>
+
+    <div class="pop-up-submit-app">
+        <h4 class="pop-up-title">Оставить заявку</h4>
+        <form action="#">
+            <div class="field field-pop-up-add-call">
+                <p>Имя*</p>
+                <input class="input-sections input-pop-up-add-call" type="text" name="name" value="">
+            </div>
+            <div class="field field-pop-up-add-call">
+                <p>Телефон*</p>
+                <input class="input-sections input-pop-up-add-call" type="tel" name="phone" value="">
+            </div>
+            <div class="button-checkbox-wrp button-sections-wrp">
+                <label class="checkbox checkbox-agree">
+                    <input type="checkbox" />
+                    <div class="checkbox__text"><span>Даю согласие на обработку <a href="#">персональных данных</a></span></div>
+                </label>
+                <input class="button input-sections input-pop-up-add-call button-disabled" type="submit" name="button" value="Отправить заявку" disabled>
+            </div>
+        </form>
+        <div class="pop-up-submit-app-close-btn"></div>
+    </div>
+
+    <div class="pop-up-thnx">
+        <div class="pop-up-thnx-content">
+            <h4 class="pop-up-title-thnx">Cпасибо!</h4>
+            <p>Заявка на обратный звонок <br>успешно отправлена. Мы свяжемся <br> с Вами в течение n минут.</p>
+        </div>
+        <div class="pop-up-thnx-close-btn"></div>
+    </div>
+
+    <div class="pop-up-phones">
+        <div class="pop-up-phones-block pop-up-phones-block1">
+            <a href="https://wa.me/79112313993">+7 (911) 231 39 93</a>
+            <a href="https://wa.me/79112313993" class="WhatsApp-text">WhatsApp</a>
+        </div>
+        <div class="pop-up-phones-block pop-up-phones-block2">
+            <a href="tel:+388124099021">8 (812) 409-90-21</a>
+            <p class="order-call-btn">Заказать звонок</p>
+        </div>
+        <div class="pop-up-phones-close-btn"></div>
+    </div>
+
+</div>
+
+        </div>
+        <div class="pop-up-filter-wrp">
+            <!-- FileInjector:popUpFilter -->
+        </div>
+        <div class="pop-up-table-sizes-wrp">
+            <!-- FileInjector:popUpTable -->
+        </div>
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../../build/js/bootstrap.min.js"></script>
+    <script src="../../build/js/jquery-ui.js"></script>
+    <script src="../../build/js/jquery.cookie.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=071f900c-e329-4526-ab49-991f1325aa21&lang=ru_RU&coordorder=longlat" type="text/javascript"></script>
+    <script src="../../build/js/jquery.maskedinput.min.js"></script>
+    <script src="../../build/js/selectize.min.js"></script>
+    <script src="../../build/js/selectize.js"></script>
+    <script src="../../build/js/YouTubePopUp.jquery.js"></script>
+    <script src="../../build/js/jquery.floatit.js"></script>
+    <script src="../../build/js/jquery.mCustomScrollbar.min.js"></script>
+    <script src="https://unpkg.com/vh-check/dist/vh-check.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../../build/js/form.js"></script>
+    <script src="../../build/js/readmore.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="../../build/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <script src="../../build/js/wordBreak.js"></script>
+
+</body>
+</html>

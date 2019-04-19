@@ -1,0 +1,379 @@
+h1 {
+    font-size: 60px;
+    line-height: 64px;
+    font-family: 'MuseoSansCyrl-900';
+    color: $textDark;
+    padding-top: 62px;
+    margin-bottom: 36px;
+}
+h2 {
+    font-size: 34px;
+    line-height: 40px;
+    font-family: 'MuseoSansCyrl-900';
+    color: $textDark;
+    margin-bottom: 19px;
+    position: relative;
+    z-index: 2;
+}
+%BTN {
+    width: 220px;
+    background-color: $buttonRed;
+    height: 55px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .3s ease;
+    transform: translateY(0);
+    span {
+        font-size: 12px;
+        font-family: 'MuseoSansCyrl-900';
+        color: #ffffff;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+    }
+    &:hover {
+        background-color: $buttonRedHover;
+    }
+    &:active {
+        transform: translateY(2px);
+    }
+}
+%chooseAuto {
+    width: 284px;
+    background-color: $buttonRed;
+    height: 55px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .3s ease;
+    transform: translateY(0);
+    span {
+        font-size: 12px;
+        font-family: 'MuseoSansCyrl-900';
+        color: #ffffff;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        position: relative;
+        padding-right: 22px;
+        &::after {
+            content: '\f054';
+            display: block;
+            position: absolute;
+            top: 50%;
+            margin-top: -11px;
+            right: 0px;
+            transition: all 0.2s ease-out;
+            font-family: Font Awesome\ 5 Free;
+            font-weight: 900;
+            font-size: 17px;
+        }
+    }
+    &:hover {
+        background-color: $buttonRedHover;
+        span {
+            &::after {
+                right: -2px;
+            }
+        }
+    }
+    &:active {
+        span {
+            &::after {
+                right: -4px;
+            }
+        }
+    }
+}
+%borderBtn {
+    width: 263px;
+    height: 55px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: $buttonRed;
+    border-radius: 2px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .3s ease;
+    transform: translateY(0);
+    span {
+        font-size: 12px;
+        font-family: 'MuseoSansCyrl-900';
+        color: $buttonRed;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        position: relative;
+        padding-right: 22px;
+        transition: all .3s ease;
+        &::after {
+            content: '\f054';
+            display: block;
+            position: absolute;
+            top: 50%;
+            margin-top: -11px;
+            right: 0px;
+            font-family: Font Awesome\ 5 Free;
+            font-weight: 900;
+            font-size: 17px;
+        }
+    }
+    &:hover {
+        background-color: $buttonRed;
+        span {
+            color: #ffffff;
+        }
+    }
+    &:active {
+        transform: translateY(-2px);
+    }
+}
+
+%input {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(225, 225, 225);
+    border-radius: 2px;
+    background-color: rgb(247, 249, 250);
+    width: 100%;
+    height: 57px;
+    color: $textDark;
+    padding: 0 20px;
+    &:focus {
+        border-color: #99abb2;
+    }
+}
+// Спецпредложения
+.propose-card {
+    width: 350px;
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.12);
+    margin-bottom: 60px;
+    .propose-card-img-wrp {
+        position: relative;
+        min-height: 250px;
+        width: 100%;
+        .change-img-trigger {
+            position: absolute;
+            top: 0;
+            width: 25%;
+            height: 100%;
+            z-index: 2;
+            border-bottom: 5px solid transparent;
+            transition: all .25s ease;
+            cursor: pointer;
+            &.active {
+                border-color: #ec1d24;
+                & + .change-img {
+                    display: block;
+                }
+            }
+            &.change-img-trigger-1 {
+                left: 0;
+            }
+            &.change-img-trigger-2 {
+                left: 25%;
+            }
+            &.change-img-trigger-3 {
+                left: 50%;
+            }
+            &.change-img-trigger-4 {
+                left: 75%;
+            }
+        }
+        .change-img {
+            width: 100%;
+            position: absolute;
+            display: none;
+            top: 0;
+            left: 0;
+            -webkit-transition: all .5s;
+            transition: all .5s;
+            max-height: 250px;
+            object-fit: cover;
+            object-position: center;
+            z-index: 1;
+            &.active {
+                display: block;
+            }
+        }
+    }
+    .propose-card-info {
+        position: relative;
+        height: 223px;
+        padding-top: 26px;
+        padding-left: 30px;
+        background-color: rgb(255, 255, 255);
+        .propose-card-title {
+            font-size: 20px;
+            font-family: 'MuseoSansCyrl-900';
+            color: $textDark;
+            min-height: 40px;
+            padding-right: 20px;
+        }
+        .icons-wrp {
+            margin-top: 18px;
+            height: 52px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            .icons {
+                width: 50%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                p {
+                    font-size: 14px;
+                    font-family: 'MuseoSansCyrl-500';
+                    color: $textDark;
+                    span {
+                        vertical-align: middle;
+                    }
+                }
+                .icon-propose-img {
+                    max-width: 22px;
+                    max-height: 22px;
+                    margin-right: 9px;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+    .bottom-part {
+        position: absolute;
+        padding-left: 30px;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .propose-card-price {
+            font-size: 20px;
+            font-family: 'MuseoSansCyrl-900';
+            color: $textDark;
+        }
+        .propose-card-btn {
+            @extend %BTN;
+            width: 190px;
+        }
+    }
+}
+
+.arrivals-card {
+    width: 255px;
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.12);
+    margin-bottom: 60px;
+    .arrivals-card-img-wrp {
+        position: relative;
+        min-height: 182px;
+        width: 100%;
+        .arrivals-img {
+            width: 100%;
+            max-height: 182px;
+            object-fit: cover;
+            object-position: center;
+            z-index: 1;
+        }
+    }
+    .arrivals-card-info {
+        position: relative;
+        height: 255px;
+        padding-top: 20px;
+        padding-left: 30px;
+        background-color: rgb(255, 255, 255);
+        .arrivals-card-title {
+            font-size: 20px;
+            font-family: 'MuseoSansCyrl-900';
+            color: $textDark;
+            margin-bottom: 18px;
+            line-height: 1;
+            min-height: 40px;
+            padding-right: 20px;
+        }
+    }
+    .arrivals-data {
+        font-size: 14px;
+        font-family: 'MuseoSansCyrl-500';
+        color: $textLight;
+        padding-bottom: 17px;
+        span {
+            color: $textDark;
+        }
+        p + p {
+            margin-top: 4px;
+        }
+    }
+    .arrivals-card-price {
+        font-size: 20px;
+        font-family: 'MuseoSansCyrl-900';
+        color: $textDark;
+        margin-bottom: 18px;
+    }
+    .arrivals-card-btn {
+        @extend %BTN;
+        width: 194px;
+    }
+}
+
+.slider-arrows-wrp {
+    position: absolute;
+    right: 30px;
+    top: calc(50% - 30px);
+    display: flex;
+    width: 90px;
+    height: 40px;
+    justify-content: space-between;
+    .arrow-slider {
+        position: relative;
+        border-radius: 2px;
+        background-color: rgb(120, 188, 196);
+        box-shadow: 0px 10px 100px 0px rgba(0, 0, 0, 0.12);
+        width: 40px;
+        height: 40px;
+        transform: translateX(0);
+        transition: all 0.3s ease-out;
+        cursor: pointer;
+        &:before {
+            content: '\f053';
+            display: block;
+            position: absolute;
+            top: 50%;
+            margin-top: -10px;
+            right: calc(50% - 5px);
+            transition: all 0.2s ease-out;
+            font-family: Font Awesome\ 5 Free;
+            font-weight: 900;
+            font-size: 17px;
+            color: #ffffff;
+        }
+        &:hover {
+            background-color: #559ba3;
+        }
+        &:active {
+            transform: translateX(-2px);
+        }
+        &.arrow-next {
+            &:active {
+                transform: translateX(2px);
+            }
+            &:before  {
+                content: '\f054';
+                left: calc(50% - 5px);
+            }
+        }
+    }
+}
+.slick-initialized .slick-slide {
+    display: flex;
+    justify-content: center;
+}
