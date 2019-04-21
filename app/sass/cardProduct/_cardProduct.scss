@@ -1,0 +1,256 @@
+.label-stock {
+    border-radius: 2px;
+    background-color: $cyanCircle;
+    width: 95px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    span {
+        font-size: 14px;
+        color: #ffffff;
+        font-family: 'MuseoSansCyrl-500';
+    }
+}
+.propose-card.propose-card-main {
+    width: 100%;
+    .propose-card-img-wrp {
+        min-height: 405px;
+        .change-img {
+            height: 100%;
+            max-height: 405px;
+        }
+    }
+}
+.card-data-block {
+    padding-top: 10px;
+}
+.details-wrp {
+    margin-bottom: 37px;
+}
+.change-btn {
+    @extend %borderBtn;
+}
+.callback-btn.card-callback-btn {
+    @extend %borderBtn;
+}
+.profit-list {
+    li {
+        display: flex;
+        align-items: center;
+        color: $textDark;
+        font-size: 14px;
+        font-family: 'MuseoSansCyrl-500';
+        position: relative;
+        &::before {
+            content: url('../img/check.svg');
+            width: 19px;
+            height: 19px;
+            display: inline-block;
+        }
+        span {
+            display: inline-block;
+            padding-left: 10px;
+        }
+    }
+}
+.phone-credit-department-wrp {
+    display: flex;
+    align-items: center;
+}
+.phone-credit-department-flex-wrp {
+    position: relative;
+    height: 44px;
+    display: flex;
+    align-items: flex-end;
+    .text-phone-credit-department {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: max-content;
+    }
+}
+.profit-list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.phone-credit-department-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(225, 225, 225);
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    margin-right: 10px;
+    .phone-credit-department-icon {
+        display: block;
+        width: 22px;
+    }
+}
+.number-phone-credit-department {
+    font-size: 18px;
+    font-family: 'MuseoSansCyrl-900';
+    color: $textDark;
+}
+// TABS
+.tab-substrate {
+    width: 100%;
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 10px 100px 0px rgba(0, 0, 0, 0.12);
+    height: 405px;
+    padding: 26px 26px 21px;
+}
+.nav-tabs {
+    border: none;
+    .nav-link {
+        text-align: center;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgb(225, 225, 225);
+        border-radius: 2px;
+        background-color: #fff;
+        color: $textDark;
+        font-family: 'MuseoSansCyrl-500';
+        font-size: 14px;
+        &.active {
+            background-color: #f7f9fa;
+            border-color: rgb(225, 225, 225);
+            color: $buttonRed;
+        }
+    }
+    .nav-item {
+        margin-bottom: 14px;
+        background-color: rgb(247, 249, 250);
+        width: 47%;
+        height: 36px;
+        & + .nav-item {
+            margin-left: 0;
+        }
+        &:nth-child(even) {
+            margin-left: 6%;
+        }
+    }
+}
+.tab-content {
+    height: 258px;
+
+}
+.tab-pane {
+    height: 100%;
+    overflow: auto;
+}
+.car__detail-table {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+.car__detail-item {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e7e7e7;
+}
+.car__detail-text {
+    padding: 12px 0;
+    &:first-child {
+        color: #a0a3aa;
+    }
+    &:last-child {
+        color: $textDark;
+    }
+}
+.old-new-prices-wrp {
+    height: 87px;
+}
+.old-price-card-data {
+    text-align: right;
+    color: #a0a3aa;
+    font-family: 'MuseoSansCyrl-500';
+    font-size: 14px;
+    span {
+        font-size: 20px;
+        font-family: 'MuseoSansCyrl-700';
+        position: relative;
+        display: inline-block;
+        padding-left: 14px;
+        &::after {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: calc(50% - 2px);
+            width: calc(100% - 4px);
+            height: 2px;
+            background-color: #f1424c;
+        }
+    }
+}
+.give-me-credit {
+    @extend %BTN;
+    margin: 0;
+    width: 100%;
+}
+
+.new-price-card-data {
+    text-align: right;
+    font-family: 'MuseoSansCyrl-900';
+    font-size: 34px;
+    color: $textDark;
+}
+.contribution-info {
+    color: $textDark;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    p {
+        line-height: 22px;
+    }
+    span {
+        color: $buttonRed;
+    }
+}
+.flex-aligning {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+// banks section
+.banks-section {
+    padding-top: 69px;
+    margin-bottom: 69px;
+}
+.change-btn, .callback-btn.card-callback-btn {
+    width: 100%;
+}
+.details-mobile {
+    .change-btn, .callback-btn.card-callback-btn {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+.banks-slider {
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 10px 100px 0px rgba(0, 0, 0, 0.12);
+    height: 148px;
+    max-height: 148px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 65px;
+}
+.same-offers {
+    padding-bottom: 40px;
+}

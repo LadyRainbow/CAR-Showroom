@@ -15,6 +15,85 @@ h2 {
     position: relative;
     z-index: 2;
 }
+.container.remove-padding {
+    padding-right: 0;
+    .row {
+        margin-right: 0;
+        .col-12 {
+            padding-right: 0;
+        }
+    }
+}
+.breadcrumbs-wrp {
+    width: 100%;
+    overflow-x: scroll;
+    margin-bottom: 8px;
+}
+.breadcrumb-custom {
+    margin-top: 30px;
+    padding: 0;
+    background-color: #ffffff;
+    display: inline-flex;
+    &::after {
+        content: '';
+        min-width: 15px;
+        height: 50px;
+        display: block;
+    }
+    li {
+        a  {
+            display: inline-block;
+            padding: 12px 0;
+            vertical-align: top;
+            color: $textDark;
+            font-size: 14px;
+        }
+        span {
+            vertical-align: middle;
+        }
+    }
+    .home-logo-img {
+        width: 27px;
+    }
+}
+.breadcrumb-custom-item {
+    flex-shrink: 0;
+    position: relative;
+    padding-right: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid $border;
+    border-bottom: 1px solid $border;
+    & + .breadcrumb-custom-item {
+        padding-left: 28px;
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: inline-block;
+            padding: 0;
+            background-color: $border;
+            content: "";
+            width: 1px;
+            height: 100%;
+        }
+    }
+    &.active {
+        background-color: #f7f9fa;
+        border-right: 1px solid $border;
+        border-radius: 0 2px 2px 0;
+        span {
+            color: $textLight;
+            font-family: 'MuseoSansCyrl-300';
+        }
+    }
+    &:first-child {
+        padding: 0 14px;
+        border-left: 1px solid $border;
+        border-radius: 2px 0 0 2px;
+    }
+}
 %BTN {
     width: 220px;
     background-color: $buttonRed;
@@ -88,7 +167,7 @@ h2 {
         }
     }
 }
-%borderBtn {
+%borderBtnArrow {
     width: 263px;
     height: 55px;
     border-style: solid;
@@ -122,6 +201,39 @@ h2 {
             font-weight: 900;
             font-size: 17px;
         }
+    }
+    &:hover {
+        background-color: $buttonRed;
+        span {
+            color: #ffffff;
+        }
+    }
+    &:active {
+        transform: translateY(-2px);
+    }
+}
+%borderBtn {
+    width: 263px;
+    height: 55px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: $buttonRed;
+    border-radius: 2px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .3s ease;
+    transform: translateY(0);
+    span {
+        font-size: 12px;
+        font-family: 'MuseoSansCyrl-900';
+        color: $buttonRed;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        position: relative;
+        transition: all .3s ease;
     }
     &:hover {
         background-color: $buttonRed;
@@ -327,7 +439,7 @@ h2 {
 
 .slider-arrows-wrp {
     position: absolute;
-    right: 30px;
+    right: 14px;
     top: calc(50% - 30px);
     display: flex;
     width: 90px;

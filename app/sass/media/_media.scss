@@ -133,6 +133,54 @@
     .arrivals-card {
         margin-bottom: 40px;
     }
+    // cars
+    .propose-card.propose-card-main {
+        height: 0;
+        padding-bottom: 75%;
+    }
+    .propose-card.propose-card-main .propose-card-img-wrp {
+        min-height: 100%;
+        height: 100%;
+        padding-bottom: 75%;
+    }
+    .propose-card.propose-card-main .propose-card-img-wrp .change-img {
+        max-height: 100%;
+        height: 100%;
+    }
+    // card
+    .card-data-block {
+        .flex-aligning {
+            flex-direction: column-reverse;
+        }
+    }
+    .old-price-card-data, .new-price-card-data {
+        text-align: left;
+    }
+    .propose-card.propose-card-main {
+        margin-bottom: 24px;
+    }
+    .row-reverse {
+        margin-bottom: 30px;
+    }
+    .details-mobile {
+        .profit-list {
+            li + li {
+                margin-top: 10px;
+            }
+        }
+        .phone-credit-department-wrp {
+            margin-top: 20px;
+        }
+    }
+    .details-wrp {
+        margin-bottom: 20px;
+    }
+    .details-mobile .callback-btn.card-callback-btn {
+        margin-top: 20px;
+    }
+    .tab-substrate-wrp {
+        margin-bottom: 40px;
+    }
 }
 @media (max-width: 767px) {
     h1 {
@@ -170,6 +218,43 @@
         width: 70%;
         left: 15%;
     }
+    h2.card-title {
+        margin-bottom: 4px;
+    }
+}
+@media (max-width: 575px) {
+    .row-reverse {
+        flex-direction: column-reverse;
+        margin-bottom: 0;
+    }
+    .old-new-prices-wrp {
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .contribution-info {
+        text-align: left;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .label-stock {
+        margin-top: 6px;
+        margin-bottom: 20px;
+    }
+    .tab-substrate-wrp {
+        .col-12 {
+            padding: 0;
+        }
+    }
+    .new-price-card-data {
+        font-size: 24px;
+    }
+    .details-mobile .change-btn, .details-mobile .callback-btn.card-callback-btn {
+        width: 100%;
+    }
+    .banks-section {
+        padding-top: 59px;
+    }
+
 }
 @media (max-width: 498px) {
     .app {
@@ -195,7 +280,22 @@
     .propose-slider-container, .arrivals-slider-container {
         padding-right: 0;
     }
-    .slick-list {padding:0 20% 0 0;}
+    .slick-list {
+        padding:0 20% 0 0;
+     }
+     .banks-slider {
+         padding: 0 35px;
+     }
+    .banks-slider-wrp {
+        .slick-list {
+           padding: 0;
+        }
+        .slick-initialized .slick-slide {
+            display: flex;
+        }
+    }
+
+
     .all-proposals-btn, .all-arrivals-btn {
         width: 100%;
     }
@@ -204,10 +304,55 @@
     .app {
         padding-bottom: 589px;
     }
+    .slider-arrows-wrp {
+        right: 15px;
+    }
 }
 @media (max-width: 400px) {
     .app {
         padding-bottom: 607px;
+    }
+}
+@media (max-width: 375px) {
+    .app {
+        padding-bottom: 625px;
+    }
+    .container {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+    .propose-slider-container, .arrivals-slider-container {
+        padding-right: 0;
+    }
+    .tab-substrate-wrp .row {
+        margin-right: -25px;
+        margin-left: -25px;
+    }
+}
+@media (max-width: 365px) {
+    .app {
+        padding-bottom: 607px;
+    }
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .propose-slider-container, .arrivals-slider-container {
+        padding-right: 0;
+    }
+    .tab-substrate-wrp .row {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    .tab-substrate {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .nav-tabs .nav-item {
+        width: 49%;
+    }
+    .nav-tabs .nav-item:nth-child(even) {
+        margin-left: 2%;
     }
 }
 @media (max-width: 357px) {
@@ -219,5 +364,9 @@
     .app {
         padding-bottom: 643px;
     }
-    .slick-list{padding:0 10% 0 0;}
+    .slick-list { padding:0 10% 0 0; }
+    .tab-substrate {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }

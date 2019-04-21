@@ -424,6 +424,6 @@
 }
 
 .all-proposals-btn, .all-arrivals-btn {
-    @extend %borderBtn;
+    @extend %borderBtnArrow;
     margin: 0 auto;
 }
