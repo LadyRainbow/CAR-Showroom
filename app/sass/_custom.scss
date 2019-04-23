@@ -14,6 +14,9 @@ h2 {
     margin-bottom: 19px;
     position: relative;
     z-index: 2;
+    span {
+        color: $buttonRed;
+    }
 }
 .container.remove-padding {
     padding-right: 0;
@@ -47,6 +50,9 @@ h2 {
             vertical-align: top;
             color: $textDark;
             font-size: 14px;
+            &:hover {
+                color: $buttonRed;
+            }
         }
         span {
             vertical-align: middle;
@@ -54,6 +60,12 @@ h2 {
     }
     .home-logo-img {
         width: 27px;
+        height: 27px;
+        background: url('../img/home.svg') center no-repeat;
+        background-size: cover;
+        &:hover {
+            background: url('../img/homeHover.svg') center no-repeat;
+        }
     }
 }
 .breadcrumb-custom-item {
@@ -265,9 +277,12 @@ h2 {
     width: 350px;
     border-radius: 2px;
     overflow: hidden;
-    box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.12);
+    // box-shadow: 0px 10px 100px 0px rgba(0, 0, 0, 0.12);
+    // box-shadow: 0px 10px 100px 0px rgba(0, 0, 0, 0.18);
     margin-bottom: 60px;
-
+    // margin-left: 20px;
+    // margin-right: 20px;
     .propose-card-info {
         position: relative;
         height: 223px;
@@ -329,6 +344,9 @@ h2 {
             width: 190px;
         }
     }
+    &:hover {
+        box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.18);
+    }
 }
 .propose-card-img-wrp {
     position: relative;
@@ -344,7 +362,7 @@ h2 {
         transition: all .25s ease;
         cursor: pointer;
         &.active {
-            border-color: #ec1d24;
+            border-color: $buttonRed;
             & + .change-img {
                 display: block;
             }

@@ -8,6 +8,9 @@ header {
         span {
             color: $buttonRed;
         }
+        &:hover {
+            color: $buttonRed;
+        }
     }
     .nav-link {
         padding: 0;

@@ -1,0 +1,161 @@
+<section class="buyout">
+    <div class="container remove-padding">
+        <div class="row">
+            <div class="col-12">
+                <div class="breadcrumbs-wrp">
+                    <ul class="breadcrumb-custom">
+                      <li class="breadcrumb-custom-item"><a class="breadcrumb-home" href="#">
+                          <div class="home-logo-img"></div>
+                      </a></li>
+                      <li class="breadcrumb-custom-item active" aria-current="page"><span>Заявка на выкуп</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <h2>Выкуп автомобиля</h2>
+                <p class="intro-promo">Выберите автомобиль, заполните данные и наш специалист подъедет в удобное время и произведет оценку автомобиля.</p>
+                <p class="intro-promo">В год мы выкупаем более тысячи автомобилей с пробегом. За 11 лет работы мы научились это делать профессионально. Благодаря тому, что наши салоны расположены в разных регионах России, мы оценим ваш автомобиль дороже, исходя из того рынка, где мы планируем его продавать.</p>
+                <p class="intro-promo">Вы приезжаете в салон, проходите бесплатную диагностику и юридическую проверку автомобиля, после чего эксперт по оценке озвучивает вам сумму выкупа. После вашего согласия, мы оформляем договор выкупа и вы получаете свои деньги. Форма расчета по вашему желанию — наличными в кассе или на банковский счет.</p>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <img class="buyout-img" src="../../build/img/buyout-img.png" alt="">
+            </div>
+        </div>
+        <div class="profit-icons-wrp">
+            <div class="row">
+                <div class="col-md-4 col-12">
+                    <div class="profit-icon-block">
+                        <img src="../../build/img/profit-blank.svg" alt="" class="profit-icon-img">
+                        <p class="profit-text">Безопасно <br> и&nbsp;юридически грамотно</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="profit-icon-block">
+                        <img src="../../build/img/profit-car.svg" alt="" class="profit-icon-img">
+                        <p class="profit-text">Любые марки и&nbsp;модели</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="profit-icon-block">
+                        <img src="../../build/img/profit-clock.svg" alt="" class="profit-icon-img">
+                        <p class="profit-text">Не более 1 часа</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="filter-block-wrp filter-block-wrp-buyout">
+        <div class="container">
+            <div class="filter-block filter-block-buyout">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-6">
+                        <div class="filter-block-item">
+                            <p class="filter-title">Марка</p>
+                            <select class="select-simple" name="cars[]" placeholder="Выберите марку авто">
+                              <option value="AL">Alabama</option>
+                              <option value="WY">Wyoming</option>
+                            </select>
+                        </div>
+                        <div class="filter-block-item">
+                            <p class="filter-title">Пробег, км</p>
+                            <input class="buyout-input" type="text" name="" value="">
+                        </div>
+                        <div class="filter-block-item">
+                            <p class="filter-title">Цена, руб</p>
+                            <div class="polzunok-wrp">
+                                <p class="polzunok-value">до <span id="result-polzunok-price"></span> <span>руб</span></p>
+                                <div id="polzunok-price" class="polzunok"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6">
+                        <div class="filter-block-item">
+                            <p class="filter-title">Модель</p>
+                            <select class="select-simple" name="cars[]" placeholder="Выберите модель авто">
+                              <option value="AL">Alabama</option>
+                              <option value="WY">Wyoming</option>
+                            </select>
+                        </div>
+                        <div class="filter-block-item">
+                            <p class="filter-title">Хозяева по ПТС</p>
+                            <select class="select-simple" name="cars[]" placeholder="Выберите из списка">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                            </select>
+                        </div>
+                        <div class="filter-block-item">
+                            <p class="filter-title">Ваше имя</p>
+                            <input class="buyout-input" type="text" name="" value="">
+                        </div>
+                    </div>
+                    <div class="col-xl-4 offset-xl-0 col-lg-6 offset-lg-3">
+                        <div class="filter-block-item">
+                            <p class="filter-title">Год выпуска, от</p>
+                            <select class="select-simple" name="cars[]" placeholder="Выберите год">
+                              <option value="1">1980</option>
+                              <option value="2">1970</option>
+                            </select>
+                        </div>
+                        <div class="filter-block-item">
+                            <p class="filter-title">КПП</p>
+                            <select class="select-simple" name="cars[]" placeholder="Выберите из списка">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                            </select>
+                        </div>
+                        <div class="filter-block-item">
+                            <p class="filter-title">Телефон</p>
+                            <input class="buyout-input" type="text" name="" value="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="send-btn"><span>ОТПРАВИТЬ</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <div class="banks-section">
+            <div class="row">
+                <div class="col-8">
+                    <h2>Банки партнеры</h2>
+                </div>
+                <div class="col-4">
+                    <div class="slider-arrows-wrp">
+                        <div id="banks-arrow-prev" class="arrow-slider arrow-prev"></div>
+                        <div id="banks-arrow-next" class="arrow-slider arrow-next"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="banks-slider-wrp">
+                <div class="banks-slider">
+                    <div>
+                        <img src="../../build/img/bank1.jpg" alt="банк">
+                    </div>
+                    <div>
+                        <img src="../../build/img/bank2.jpg" alt="банк">
+                    </div>
+                    <div>
+                        <img src="../../build/img/bank3.jpg" alt="банк">
+                    </div>
+                    <div>
+                        <img src="../../build/img/bank4.jpg" alt="банк">
+                    </div>
+                    <div>
+                        <img src="../../build/img/bank5.jpg" alt="банк">
+                    </div>
+                    <div>
+                        <img src="../../build/img/bank1.jpg" alt="банк">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

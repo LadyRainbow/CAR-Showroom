@@ -1,0 +1,55 @@
+.buyout {
+    padding-bottom: 21px;
+}
+.intro-promo {
+    color: $textDark;
+    font-size: 14px;
+    line-height: 22px;
+    & + .intro-promo {
+        margin-top: 23px;
+    }
+}
+.buyout-img {
+    margin-top: -86px;
+}
+.profit-icons-wrp {
+    margin-top: 25px;
+}
+.profit-icon-block {
+    display: flex;
+    align-items: center;
+}
+.profit-icon-img {
+    width: 51px;
+    height: 51px;
+    margin-right: 17px;
+}
+.profit-text {
+    color: $textDark;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: 'MuseoSansCyrl-700';
+}
+@media (min-width: 768px) {
+    .profit-icons-wrp {
+        .col-md-4 {
+            max-width: 27.333%;
+        }
+    }
+}
+.filter-block.filter-block-buyout {
+    margin-top: 59px;
+}
+.buyout-input {
+    @extend %input;
+    width: 284px;
+}
+.send-btn {
+    @extend %BTN;
+    width: 284px;
+    margin: 0 auto;
+    margin-top: 52px;
+}
+.filter-block-wrp.filter-block-wrp-buyout {
+    padding-bottom: 0;
+}

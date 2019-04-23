@@ -230,6 +230,8 @@ h2 {
   margin-bottom: 19px;
   position: relative;
   z-index: 2; }
+  h2 span {
+    color: #f7444e; }
 
 .container.remove-padding {
   padding-right: 0; }
@@ -262,10 +264,18 @@ h2 {
     vertical-align: top;
     color: #002c3e;
     font-size: 14px; }
+    .breadcrumb-custom li a:hover {
+      color: #f7444e; }
   .breadcrumb-custom li span {
     vertical-align: middle; }
   .breadcrumb-custom .home-logo-img {
-    width: 27px; }
+    width: 27px;
+    height: 27px;
+    background: url("../img/home.svg") center no-repeat;
+    -webkit-background-size: cover;
+            background-size: cover; }
+    .breadcrumb-custom .home-logo-img:hover {
+      background: url("../img/homeHover.svg") center no-repeat; }
 
 .breadcrumb-custom-item {
   -webkit-flex-shrink: 0;
@@ -313,7 +323,7 @@ h2 {
     -webkit-border-radius: 2px 0 0 2px;
             border-radius: 2px 0 0 2px; }
 
-.propose-card .bottom-part .propose-card-btn, .arrivals-card .arrivals-card-btn, .callback-btn, .send-form-btn, .give-me-credit, .inStock-card-btn, .credit-form-btn {
+.propose-card .bottom-part .propose-card-btn, .arrivals-card .arrivals-card-btn, .callback-btn, .send-form-btn, .give-me-credit, .send-btn, .inStock-card-btn, .credit-form-btn {
   width: 220px;
   background-color: #f7444e;
   height: 55px;
@@ -338,15 +348,15 @@ h2 {
   -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
           transform: translateY(0); }
-  .propose-card .bottom-part .propose-card-btn span, .arrivals-card .arrivals-card-btn span, .callback-btn span, .send-form-btn span, .give-me-credit span, .inStock-card-btn span, .credit-form-btn span {
+  .propose-card .bottom-part .propose-card-btn span, .arrivals-card .arrivals-card-btn span, .callback-btn span, .send-form-btn span, .give-me-credit span, .send-btn span, .inStock-card-btn span, .credit-form-btn span {
     font-size: 12px;
     font-family: 'MuseoSansCyrl-900';
     color: #ffffff;
     letter-spacing: 1.2px;
     text-transform: uppercase; }
-  .propose-card .bottom-part .propose-card-btn:hover, .arrivals-card .arrivals-card-btn:hover, .callback-btn:hover, .send-form-btn:hover, .give-me-credit:hover, .inStock-card-btn:hover, .credit-form-btn:hover {
+  .propose-card .bottom-part .propose-card-btn:hover, .arrivals-card .arrivals-card-btn:hover, .callback-btn:hover, .send-form-btn:hover, .give-me-credit:hover, .send-btn:hover, .inStock-card-btn:hover, .credit-form-btn:hover {
     background-color: #db2f37; }
-  .propose-card .bottom-part .propose-card-btn:active, .arrivals-card .arrivals-card-btn:active, .callback-btn:active, .send-form-btn:active, .give-me-credit:active, .inStock-card-btn:active, .credit-form-btn:active {
+  .propose-card .bottom-part .propose-card-btn:active, .arrivals-card .arrivals-card-btn:active, .callback-btn:active, .send-form-btn:active, .give-me-credit:active, .send-btn:active, .inStock-card-btn:active, .credit-form-btn:active {
     -webkit-transform: translateY(2px);
         -ms-transform: translateY(2px);
             transform: translateY(2px); }
@@ -509,7 +519,7 @@ h2 {
         -ms-transform: translateY(-2px);
             transform: translateY(-2px); }
 
-.form-block-input, .credit-form-input, .credit-form-textarea {
+.form-block-input, .buyout-input, .credit-form-input, .credit-form-textarea {
   border-style: solid;
   border-width: 1px;
   border-color: #e1e1e1;
@@ -520,7 +530,7 @@ h2 {
   height: 57px;
   color: #002c3e;
   padding: 0 20px; }
-  .form-block-input:focus, .credit-form-input:focus, .credit-form-textarea:focus {
+  .form-block-input:focus, .buyout-input:focus, .credit-form-input:focus, .credit-form-textarea:focus {
     border-color: #99abb2; }
 
 .propose-card {
@@ -528,8 +538,8 @@ h2 {
   -webkit-border-radius: 2px;
           border-radius: 2px;
   overflow: hidden;
-  -webkit-box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.12);
   margin-bottom: 60px; }
   .propose-card .propose-card-info {
     position: relative;
@@ -606,6 +616,9 @@ h2 {
       color: #002c3e; }
     .propose-card .bottom-part .propose-card-btn {
       width: 190px; }
+  .propose-card:hover {
+    -webkit-box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.18);
+            box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.18); }
 
 .propose-card-img-wrp {
   position: relative;
@@ -623,7 +636,7 @@ h2 {
     transition: all .25s ease;
     cursor: pointer; }
     .propose-card-img-wrp .change-img-trigger.active {
-      border-color: #ec1d24; }
+      border-color: #f7444e; }
       .propose-card-img-wrp .change-img-trigger.active + .change-img {
         display: block; }
     .propose-card-img-wrp .change-img-trigger.change-img-trigger-1 {
@@ -849,6 +862,8 @@ header {
     display: inline-block; }
     header .logo-header span {
       color: #f7444e; }
+    header .logo-header:hover {
+      color: #f7444e; }
   header .nav-link {
     padding: 0; }
     header .nav-link:hover {
@@ -1060,7 +1075,8 @@ footer {
           box-shadow: 0px 10px 100px 0px rgba(0, 0, 0, 0.12);
   padding-top: 50px;
   padding-bottom: 74px;
-  padding-left: 80px; }
+  padding-left: 85px;
+  padding-right: 85px; }
 
 .filter-block-item + .filter-block-item {
   margin-top: 28px; }
@@ -1853,8 +1869,69 @@ footer {
 .same-offers {
   padding-bottom: 40px; }
 
+.buyout {
+  padding-bottom: 21px; }
+
+.intro-promo {
+  color: #002c3e;
+  font-size: 14px;
+  line-height: 22px; }
+  .intro-promo + .intro-promo {
+    margin-top: 23px; }
+
+.buyout-img {
+  margin-top: -86px; }
+
+.profit-icons-wrp {
+  margin-top: 25px; }
+
+.profit-icon-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.profit-icon-img {
+  width: 51px;
+  height: 51px;
+  margin-right: 17px; }
+
+.profit-text {
+  color: #002c3e;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: 'MuseoSansCyrl-700'; }
+
+@media (min-width: 768px) {
+  .profit-icons-wrp .col-md-4 {
+    max-width: 27.333%; } }
+
+.filter-block.filter-block-buyout {
+  margin-top: 59px; }
+
+.buyout-input {
+  width: 284px; }
+
+.send-btn {
+  width: 284px;
+  margin: 0 auto;
+  margin-top: 52px; }
+
+.filter-block-wrp.filter-block-wrp-buyout {
+  padding-bottom: 0; }
+
 .inStock {
   padding-bottom: 100px; }
+
+.filter-block-wrp.filter-block-wrp-inStock {
+  padding-bottom: 63px; }
+
+.filter-block.filter-block-inStock {
+  margin-top: 6px; }
 
 .select-inStock-wrp .selectize-control.single .selectize-input {
   width: 100%; }
@@ -2138,7 +2215,21 @@ body {
     display: none; }
   .shadow, .slick-slide {
     -webkit-box-shadow: none;
-            box-shadow: none; } }
+            box-shadow: none; }
+  .selectize-control.single .selectize-input {
+    width: 100%; }
+  .choose-auto-btn {
+    width: 100%; }
+  .send-btn {
+    width: 365px; }
+  .polzunok-wrp {
+    width: 100%; }
+  .select2-container {
+    width: 100% !important; }
+  .filter-block-item {
+    margin-top: 28px; }
+  .buyout-input {
+    width: 100%; } }
 
 @media (max-width: 991px) {
   .app {
@@ -2198,18 +2289,11 @@ body {
   .filter-block {
     padding-right: 80px;
     margin-top: -55px; }
-  .select2-container {
-    width: 100% !important; }
-  .selectize-control.single .selectize-input {
-    width: 100%; }
-  .polzunok-wrp {
-    width: 100%; }
   .choose-auto-btn {
     margin: 0 auto;
-    margin-top: 54px;
+    margin-top: 54px; }
+  .send-btn {
     width: 100%; }
-  .filter-block-item {
-    margin-top: 28px; }
   .marks h2 {
     margin-bottom: 0; }
   .letter-block {
@@ -2291,7 +2375,11 @@ body {
   .credit-card-content {
     padding-left: 20px; }
   .decor-profit-list-block.decor-profit-list-block-mobile {
-    margin-top: 38px; } }
+    margin-top: 38px; }
+  .buyout-img {
+    margin-top: 27px; }
+  .profit-icons-wrp .col-md-4 {
+    max-width: 33.333333%; } }
 
 @media (max-width: 767px) {
   h1 {
@@ -2299,7 +2387,7 @@ body {
     line-height: 1; }
   h2 {
     font-size: 24px;
-    line-height: 1; }
+    line-height: 1.2; }
   .app {
     padding-bottom: 553px; }
   footer .callback-btn {
@@ -2334,7 +2422,11 @@ body {
     float: none;
     text-align: left; }
   .inStock-card-btn {
-    width: 100%; } }
+    width: 100%; }
+  .profit-icons-wrp .col-12 + .col-12 {
+    margin-top: 25px; }
+  .profit-icons-wrp .col-md-4 {
+    max-width: 100%; } }
 
 @media (max-width: 575px) {
   .row-reverse {
@@ -2408,7 +2500,11 @@ body {
       .decor-profit-list-block.decor-profit-list-block-mobile .decor-profit-list li::before {
         width: 22px;
         height: 22px;
-        margin-right: 16px; } }
+        margin-right: 16px; }
+  .filter-block-wrp.filter-block-wrp-inStock {
+    padding-bottom: 52px; }
+  .filter-block.filter-block-buyout {
+    margin-top: 40px; } }
 
 @media (max-width: 422px) {
   .app {

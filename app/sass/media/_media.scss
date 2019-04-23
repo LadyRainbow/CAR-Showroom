@@ -9,6 +9,27 @@
     .shadow, .slick-slide {
         box-shadow: none;
     }
+    .selectize-control.single .selectize-input {
+        width: 100%;
+    }
+    .choose-auto-btn {
+        width: 100%;
+    }
+    .send-btn {
+        width: 365px;
+    }
+    .polzunok-wrp {
+        width: 100%;
+    }
+    .select2-container {
+        width: 100% !important;
+    }
+    .filter-block-item {
+        margin-top: 28px;
+    }
+    .buyout-input {
+        width: 100%;
+    }
 }
 @media (max-width: 991px) {
     .app {
@@ -81,22 +102,12 @@
         padding-right: 80px;
         margin-top: -55px;
     }
-    .select2-container {
-        width: 100% !important;
-    }
-    .selectize-control.single .selectize-input {
-        width: 100%;
-    }
-    .polzunok-wrp {
-        width: 100%;
-    }
     .choose-auto-btn {
         margin: 0 auto;
         margin-top: 54px;
-        width: 100%;
     }
-    .filter-block-item {
-        margin-top: 28px;
+    .send-btn {
+        width: 100%;
     }
     .marks h2 {
         margin-bottom: 0;
@@ -209,6 +220,14 @@
     .decor-profit-list-block.decor-profit-list-block-mobile {
         margin-top: 38px;
     }
+    .buyout-img {
+        margin-top: 27px;
+    }
+    .profit-icons-wrp {
+        .col-md-4 {
+            max-width: 33.333333%;
+        }
+    }
 }
 @media (max-width: 767px) {
     h1 {
@@ -217,7 +236,7 @@
     }
     h2 {
         font-size: 24px;
-        line-height: 1;
+        line-height: 1.2;
     }
     .app {
         padding-bottom: 553px;
@@ -269,6 +288,14 @@
     }
     .inStock-card-btn {
         width: 100%;
+    }
+    .profit-icons-wrp {
+        .col-12 + .col-12 {
+            margin-top: 25px;
+        }
+        .col-md-4 {
+            max-width: 100%;
+        }
     }
 }
 @media (max-width: 575px) {
@@ -343,8 +370,6 @@
             display: flex;
         }
     }
-
-
     .all-proposals-btn, .all-arrivals-btn {
         width: 100%;
     }
@@ -371,6 +396,12 @@
                 }
             }
         }
+    }
+    .filter-block-wrp.filter-block-wrp-inStock {
+        padding-bottom: 52px;
+    }
+    .filter-block.filter-block-buyout {
+        margin-top: 40px;
     }
 }
 @media (max-width: 422px) {
