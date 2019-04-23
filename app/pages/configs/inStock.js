@@ -7,7 +7,7 @@ const config = {
             placeholders: {}
         },
         pagesContent: {
-            file: 'catalog\\catalog.html',
+            file: 'inStock\\inStock.html',
             placeholders: {}
         },
         footer: {

@@ -267,55 +267,7 @@ h2 {
     overflow: hidden;
     box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.12);
     margin-bottom: 60px;
-    .propose-card-img-wrp {
-        position: relative;
-        min-height: 250px;
-        width: 100%;
-        .change-img-trigger {
-            position: absolute;
-            top: 0;
-            width: 25%;
-            height: 100%;
-            z-index: 2;
-            border-bottom: 5px solid transparent;
-            transition: all .25s ease;
-            cursor: pointer;
-            &.active {
-                border-color: #ec1d24;
-                & + .change-img {
-                    display: block;
-                }
-            }
-            &.change-img-trigger-1 {
-                left: 0;
-            }
-            &.change-img-trigger-2 {
-                left: 25%;
-            }
-            &.change-img-trigger-3 {
-                left: 50%;
-            }
-            &.change-img-trigger-4 {
-                left: 75%;
-            }
-        }
-        .change-img {
-            width: 100%;
-            position: absolute;
-            display: none;
-            top: 0;
-            left: 0;
-            -webkit-transition: all .5s;
-            transition: all .5s;
-            max-height: 250px;
-            object-fit: cover;
-            object-position: center;
-            z-index: 1;
-            &.active {
-                display: block;
-            }
-        }
-    }
+
     .propose-card-info {
         position: relative;
         height: 223px;
@@ -378,7 +330,56 @@ h2 {
         }
     }
 }
-
+.propose-card-img-wrp {
+    position: relative;
+    min-height: 250px;
+    width: 100%;
+    .change-img-trigger {
+        position: absolute;
+        top: 0;
+        width: 25%;
+        height: 100%;
+        z-index: 2;
+        border-bottom: 5px solid transparent;
+        transition: all .25s ease;
+        cursor: pointer;
+        &.active {
+            border-color: #ec1d24;
+            & + .change-img {
+                display: block;
+            }
+        }
+        &.change-img-trigger-1 {
+            left: 0;
+        }
+        &.change-img-trigger-2 {
+            left: 25%;
+        }
+        &.change-img-trigger-3 {
+            left: 50%;
+        }
+        &.change-img-trigger-4 {
+            left: 75%;
+        }
+    }
+    .change-img {
+        width: 100%;
+        position: absolute;
+        display: none;
+        top: 0;
+        left: 0;
+        -webkit-transition: all .5s;
+        transition: all .5s;
+        max-height: 250px;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        z-index: 1;
+        &.active {
+            display: block;
+        }
+    }
+}
 .arrivals-card {
     width: 255px;
     border-radius: 2px;
@@ -488,4 +489,67 @@ h2 {
 .slick-initialized .slick-slide {
     display: flex;
     justify-content: center;
+}
+
+.align-h2 {
+    display: flex;
+    align-items: center;
+    h2 {
+        line-height: 1;
+        margin-bottom: 0;
+    }
+}
+// pagination
+.page-link {
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin-left: 0;
+    border-radius: 2px;
+    color: $cyanCircle;
+    &:hover {
+        background-color: #f4f6f7;
+        color: $cyanCircle;
+    }
+    &:focus {
+        box-shadow: none;
+    }
+}
+.page-item {
+    &:first-child, &:last-child {
+        .page-link {
+            border: 1px solid $border;
+            border-radius: 2px;
+            background-color: #f4f6f7;
+            span {
+                color: $textLight;
+            }
+        }
+        &:hover {
+            .page-link {
+                background-color: $cyanCircle;
+                border-color: $cyanCircle;
+                span {
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+    &.active {
+        .page-link {
+            background-color: $cyanCircle;
+            border-color: $cyanCircle;
+            span {
+                color: #ffffff;
+            }
+        }
+    }
+}
+.container.container-remove-padding-both {
+    padding-right: 0;
+    padding-left: 0;
 }

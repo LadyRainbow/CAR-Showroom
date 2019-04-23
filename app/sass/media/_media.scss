@@ -143,9 +143,17 @@
         height: 100%;
         padding-bottom: 75%;
     }
-    .propose-card.propose-card-main .propose-card-img-wrp .change-img {
+    .propose-card.propose-card-main .propose-card-img-wrp .change-img  {
         max-height: 100%;
         height: 100%;
+    }
+    .propose-card-img-wrp.inStock-card-img-wrp {
+        max-height: 100%;
+        height: 100%;
+        padding-bottom: 70%;
+        .change-img {
+            max-height: 100%;
+        }
     }
     // card
     .card-data-block {
@@ -180,6 +188,26 @@
     }
     .tab-substrate-wrp {
         margin-bottom: 40px;
+    }
+    // inStock
+    .select-inStock-wrp {
+        margin-top: 15px;
+    }
+    .inStock-card-content {
+        padding-right: 20px;
+    }
+    .inStock-card-content-inner-padding-left {
+        padding-left: 20px;
+    }
+    .inStock-card-content .title-price {
+        margin-bottom: 23px;
+    }
+    // credit
+    .credit-card-content {
+        padding-left: 20px;
+    }
+    .decor-profit-list-block.decor-profit-list-block-mobile {
+        margin-top: 38px;
     }
 }
 @media (max-width: 767px) {
@@ -220,6 +248,27 @@
     }
     h2.card-title {
         margin-bottom: 4px;
+    }
+    // inStock
+    .inStock {
+        padding-bottom: 60px;
+    }
+    .inStock-cards-wrp {
+        padding-bottom: 30px;
+    }
+    .inStock-card-content {
+        height: auto;
+    }
+    .message-warranty {
+        margin-top: 17px;
+        margin-bottom: 20px;
+    }
+    .inStock-card-content-inner-aligned {
+        float: none;
+        text-align: left;
+    }
+    .inStock-card-btn {
+        width: 100%;
     }
 }
 @media (max-width: 575px) {
@@ -299,6 +348,30 @@
     .all-proposals-btn, .all-arrivals-btn {
         width: 100%;
     }
+    // credit
+    .credit {
+        padding-bottom: 0;
+        .banks-section {
+            margin-bottom: 60px;
+        }
+    }
+    .credit-form {
+        padding: 29px 20px 47px;
+    }
+    .decor-profit-list-block.decor-profit-list-block-mobile {
+        padding-left: 25px;
+        padding-right: 25px;
+        .decor-profit-list {
+            li {
+                padding: 18px 0;
+                &::before {
+                    width: 22px;
+                    height: 22px;
+                    margin-right: 16px;
+                }
+            }
+        }
+    }
 }
 @media (max-width: 422px) {
     .app {
@@ -353,6 +426,10 @@
     }
     .nav-tabs .nav-item:nth-child(even) {
         margin-left: 2%;
+    }
+    .decor-profit-list-block.decor-profit-list-block-mobile {
+        padding-left: 14px;
+        padding-right: 14px;
     }
 }
 @media (max-width: 357px) {

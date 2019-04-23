@@ -7,7 +7,7 @@ const config = {
             placeholders: {}
         },
         pagesContent: {
-            file: 'checkout\\checkout.html',
+            file: 'credit\\credit.html',
             placeholders: {}
         },
         footer: {

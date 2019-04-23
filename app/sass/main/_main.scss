@@ -120,6 +120,9 @@
 .selectize-input > input {
     width: 100% !important;
 }
+.selectize-input > .item {
+    width: 100%;
+}
 .selectize-control.single .selectize-input {
     width: 284px;
     height: 55px;

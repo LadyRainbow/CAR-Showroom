@@ -9,6 +9,11 @@ $(document).ready(function () {
         create: true,
         sortField: 'text'
     });
+    $('.select-inStock').selectize({
+        // items: null,
+        create: true,
+        sortField: 'text'
+    });
     // polzunok#1
     $("#polzunok-price").slider({
         min: 60000,
