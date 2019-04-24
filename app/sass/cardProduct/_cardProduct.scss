@@ -7,6 +7,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 2px;
+    float: right;
     span {
         font-size: 14px;
         color: #ffffff;
@@ -142,7 +143,6 @@
 }
 .tab-content {
     height: 258px;
-
 }
 .tab-pane {
     height: 100%;

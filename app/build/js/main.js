@@ -1,5 +1,15 @@
 $(document).ready(function () {
 
+    // call pop-up
+    var $callbackBtn = $('callback-btn');
+
+     $("[data-toggle=popover]").popover({
+      trigger: 'focus',
+      html: true,
+    });
+
+
+    // SELECTS STYLES
     $('.select-multiple').select2({
         placeholder: "Выберите марку и модель авто"
     });
@@ -10,11 +20,17 @@ $(document).ready(function () {
         sortField: 'text'
     });
     $('.select-inStock').selectize({
-        // items: null,
         create: true,
         sortField: 'text'
     });
-    // polzunok#1
+    $('.select-simple-marks').selectize({
+        create: true,
+        sortField: 'text'
+    });
+    // SELECTS STYLES END -------
+
+    // PRICE RANGE
+   // polzunok#1
     $("#polzunok-price").slider({
         min: 60000,
         max: 900000,
@@ -40,8 +56,9 @@ $(document).ready(function () {
     });
     $( "#result-polzunok-power" ).text($( "#polzunok-power" ).slider( "value" ));
 
+    // PRICE RANGE END ----------
 
-
+    // SLIDERS
     $('.propose-slider').slick({
         slidesToShow: 3,
         slidesToScroll: 3,
@@ -65,7 +82,6 @@ $(document).ready(function () {
             },
           ]
     });
-
     $('.arrivals-slider').slick({
         slidesToShow: 4,
         slidesToScroll: 4,
@@ -155,13 +171,17 @@ $(document).ready(function () {
             },
           ]
     });
+    // SLIDERS END -----
 
+    // changing image angles by hover
     $('.change-img-trigger').hover(function () {
         var $parent = $(this).parent();
         var $parentImg = $parent.find('.change-img-trigger');
         $parentImg.removeClass('active');
         $(this).addClass('active');
     });
+
+
 
 
     // initialize the vh-check
@@ -172,4 +192,20 @@ $(document).ready(function () {
     $(document).on('touchmove',function(e){
     e.preventDefault();
     });
+
+    // MAP
+    //Дождёмся загрузки API и готовности DOM.
+    ymaps.ready(init);
+    function init() {
+        myMap = new ymaps.Map('map', {
+            center: [37.770389, 55.650111],
+            zoom: 16
+        });
+        myMap.geoObjects.add(new ymaps.Placemark([37.770389, 55.650111], {
+              preset: 'twirl#redDotIcon'
+       }));
+       myMap.behaviors.disable('scrollZoom');
+       // myMap.behaviors.disable('drag');
+    };
+
 });

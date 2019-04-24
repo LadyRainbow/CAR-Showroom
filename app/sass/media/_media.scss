@@ -33,6 +33,7 @@
 }
 @media (max-width: 991px) {
     .app {
+        padding-top: 52px;
         padding-bottom: 430px;
     }
     header {
@@ -228,6 +229,9 @@
             max-width: 33.333333%;
         }
     }
+    .contacts-tab-substrate {
+        margin-bottom: 30px;
+    }
 }
 @media (max-width: 767px) {
     h1 {
@@ -315,6 +319,7 @@
     .label-stock {
         margin-top: 6px;
         margin-bottom: 20px;
+        float: left;
     }
     .tab-substrate-wrp {
         .col-12 {
@@ -330,7 +335,15 @@
     .banks-section {
         padding-top: 59px;
     }
-
+    .contacts-tab-substrate {
+        width: calc(100% + 30px);
+        margin-left: -15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .contacts-detail-item {
+        padding: 0;
+    }
 }
 @media (max-width: 498px) {
     .app {
@@ -432,6 +445,12 @@
         margin-right: -25px;
         margin-left: -25px;
     }
+    .contacts-tab-substrate {
+        width: calc(100% + 50px);
+        margin-left: -25px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
 }
 @media (max-width: 365px) {
     .app {
@@ -461,6 +480,12 @@
     .decor-profit-list-block.decor-profit-list-block-mobile {
         padding-left: 14px;
         padding-right: 14px;
+    }
+    .contacts-tab-substrate {
+        width: calc(100% + 30px);
+        margin-left: -15px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 @media (max-width: 357px) {
