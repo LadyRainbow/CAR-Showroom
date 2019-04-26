@@ -267,6 +267,7 @@
 }
 .popover {
     border: none;
+    z-index: 2;
     .arrow {
         display: none;
     }
@@ -311,7 +312,6 @@
 }
 .mark-item-wrp {
     position: relative;
-
     &:hover {
         .mark-list-links {
             display: block;
@@ -348,7 +348,7 @@
     display: inline-block;
     position: relative;
     padding-bottom: 2px;
-    border-bottom: 1px dashed $textDark;
+    border-bottom: 1px dashed rgba(0, 44, 62, .341);
     span {
         border: none;
         color: $buttonRed;

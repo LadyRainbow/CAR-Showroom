@@ -5,13 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Car showroom</title>
-  <link rel="shortcut icon" type="image/png" href="https://auto.ndtvimg.com/car-images/medium/maruti-suzuki/alto-800/maruti-suzuki-alto-800.jpg?v=1_1"/>
+  <link rel="shortcut icon" type="image/png" href="../../build/img/favicon.ico"/>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="../../build/css/bootstrap.css">
   <link rel="stylesheet" href="../../build/css/jquery.mCustomScrollbar.css">
   <link rel="stylesheet" href="../../build/css/selectize.css">
-  <link rel="stylesheet" href="../../build/css/YouTubePopUp.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="../../build/css/style.css">
@@ -139,7 +138,7 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-6 col-12">
-                                <div class="change-btn"><span>Обменять</span></div>
+                                <a href="#" class="change-btn"><span>Обменять</span></a>
                             </div>
                             <div class="col-sm-6 col-12">
                                 <div class="callback-btn card-callback-btn"><span>Обратный звонок</span></div>
@@ -208,9 +207,126 @@
                                               </tr>
                                             </tbody></table>
                                       </div>
-                                      <div class="tab-pane fade" id="equipment" role="tabpanel" aria-labelledby="equipment-tab">1</div>
-                                      <div class="tab-pane fade" id="description" role="tabpanel" aria-labelledby="description-tab">2</div>
-                                      <div class="tab-pane fade" id="credit" role="tabpanel" aria-labelledby="credit-tab">3</div>
+                                      <div class="tab-pane fade mCustomScrollbar" id="equipment" role="tabpanel" aria-labelledby="equipment-tab">
+                                          <table class="car__detail-table">
+                                              <tbody><tr class="car__detail-item">
+                                                <td class="car__detail-text">Поколение</td>
+                                                <td class="car__detail-text">III Рестайлинг [2014 - н.в.]</td>
+                                              </tr>
+                                              <tr class="car__detail-item">
+                                                <td class="car__detail-text">Год выпуска</td>
+                                                <td class="car__detail-text">2016</td>
+                                              </tr>
+                                              <tr class="car__detail-item">
+                                                <td class="car__detail-text">Пробег</td>
+                                                <td class="car__detail-text">41590 км</td>
+                                              </tr>
+                                              <tr class="car__detail-item">
+                                                <td class="car__detail-text">Тип кузова</td>
+                                                <td class="car__detail-text">Седан</td>
+                                              </tr>
+                                              <tr class="car__detail-item">
+                                                <td class="car__detail-text">Двигатель</td>
+                                                <td class="car__detail-text">Бензиновый</td>
+                                              </tr>
+                                              <tr class="car__detail-item">
+                                                <td class="car__detail-text">КПП</td>
+                                                <td class="car__detail-text">АКПП</td>
+                                              </tr>
+                                              <tr class="car__detail-item">
+                                                <td class="car__detail-text">Цвет</td>
+                                                <td class="car__detail-text">Бежевый                          металлик</td>
+                                              </tr>
+                                              <tr class="car__detail-item">
+                                                <td class="car__detail-text">Привод</td>
+                                                <td class="car__detail-text">Передний</td>
+                                              </tr>
+                                              <tr class="car__detail-item">
+                                                <td class="car__detail-text">Объем / Мощность</td>
+                                                <td class="car__detail-text">1.6 л. / 125 л.с.</td>
+                                              </tr>
+                                            </tbody></table>
+                                      </div>
+                                      <div class="tab-pane fade mCustomScrollbar" id="description" role="tabpanel" aria-labelledby="description-tab">
+                                          <table class="car__detail-table">
+                                              <tbody><tr class="car__detail-item">
+                                                <td class="car__detail-text">Поколение</td>
+                                                <td class="car__detail-text">III Рестайлинг [2014 - н.в.]</td>
+                                              </tr>
+                                              <tr class="car__detail-item">
+                                                <td class="car__detail-text">Год выпуска</td>
+                                                <td class="car__detail-text">2016</td>
+                                              </tr>
+                                              <tr class="car__detail-item">
+                                                <td class="car__detail-text">Пробег</td>
+                                                <td class="car__detail-text">41590 км</td>
+                                              </tr>
+                                              <tr class="car__detail-item">
+                                                <td class="car__detail-text">Тип кузова</td>
+                                                <td class="car__detail-text">Седан</td>
+                                              </tr>
+                                              <tr class="car__detail-item">
+                                                <td class="car__detail-text">Двигатель</td>
+                                                <td class="car__detail-text">Бензиновый</td>
+                                              </tr>
+                                              <tr class="car__detail-item">
+                                                <td class="car__detail-text">КПП</td>
+                                                <td class="car__detail-text">АКПП</td>
+                                              </tr>
+                                              <tr class="car__detail-item">
+                                                <td class="car__detail-text">Цвет</td>
+                                                <td class="car__detail-text">Бежевый                          металлик</td>
+                                              </tr>
+                                              <tr class="car__detail-item">
+                                                <td class="car__detail-text">Привод</td>
+                                                <td class="car__detail-text">Передний</td>
+                                              </tr>
+                                              <tr class="car__detail-item">
+                                                <td class="car__detail-text">Объем / Мощность</td>
+                                                <td class="car__detail-text">1.6 л. / 125 л.с.</td>
+                                              </tr>
+                                            </tbody></table>
+                                      </div>
+                                      <div class="tab-pane fade mCustomScrollbar" id="credit" role="tabpanel" aria-labelledby="credit-tab">
+                                          <table class="car__detail-table">
+                                              <tbody><tr class="car__detail-item">
+                                                <td class="car__detail-text">Поколение</td>
+                                                <td class="car__detail-text">III Рестайлинг [2014 - н.в.]</td>
+                                              </tr>
+                                              <tr class="car__detail-item">
+                                                <td class="car__detail-text">Год выпуска</td>
+                                                <td class="car__detail-text">2016</td>
+                                              </tr>
+                                              <tr class="car__detail-item">
+                                                <td class="car__detail-text">Пробег</td>
+                                                <td class="car__detail-text">41590 км</td>
+                                              </tr>
+                                              <tr class="car__detail-item">
+                                                <td class="car__detail-text">Тип кузова</td>
+                                                <td class="car__detail-text">Седан</td>
+                                              </tr>
+                                              <tr class="car__detail-item">
+                                                <td class="car__detail-text">Двигатель</td>
+                                                <td class="car__detail-text">Бензиновый</td>
+                                              </tr>
+                                              <tr class="car__detail-item">
+                                                <td class="car__detail-text">КПП</td>
+                                                <td class="car__detail-text">АКПП</td>
+                                              </tr>
+                                              <tr class="car__detail-item">
+                                                <td class="car__detail-text">Цвет</td>
+                                                <td class="car__detail-text">Бежевый                          металлик</td>
+                                              </tr>
+                                              <tr class="car__detail-item">
+                                                <td class="car__detail-text">Привод</td>
+                                                <td class="car__detail-text">Передний</td>
+                                              </tr>
+                                              <tr class="car__detail-item">
+                                                <td class="car__detail-text">Объем / Мощность</td>
+                                                <td class="car__detail-text">1.6 л. / 125 л.с.</td>
+                                              </tr>
+                                            </tbody></table>
+                                      </div>
                                     </div>
                                 </div>
                             </div>
@@ -233,7 +349,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-6 col-12">
-                                <div class="give-me-credit"><span>Заявка на кредит</span></div>
+                                <a href="#" class="give-me-credit"><span>Заявка на кредит</span></a>
                             </div>
                         </div>
                     </div>
@@ -263,7 +379,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <div class="change-btn"><span>Обменять</span></div>
+                        <a href="#" class="change-btn"><span>Обменять</span></a>
                     </div>
                     <div class="col-12">
                         <div class="callback-btn card-callback-btn"><span>Обратный звонок</span></div>
@@ -286,22 +402,59 @@
             <div class="banks-slider-wrp">
                 <div class="banks-slider">
                     <div>
-                        <img src="../../build/img/bank1.jpg" alt="банк">
-                    </div>
-                    <div>
                         <img src="../../build/img/bank2.jpg" alt="банк">
                     </div>
                     <div>
-                        <img src="../../build/img/bank3.jpg" alt="банк">
+                        <img src="../../build/img/bank17.jpg" alt="банк">
                     </div>
                     <div>
                         <img src="../../build/img/bank4.jpg" alt="банк">
                     </div>
                     <div>
+                        <img src="../../build/img/bank8.jpg" alt="банк">
+                    </div>
+                    <div>
                         <img src="../../build/img/bank5.jpg" alt="банк">
                     </div>
                     <div>
+                        <img src="../../build/img/bank6.jpg" alt="банк">
+                    </div>
+                    <div>
+                        <img src="../../build/img/bank3.jpg" alt="банк">
+                    </div>
+                    <div>
+                        <img src="../../build/img/bank7.jpg" alt="банк">
+                    </div>
+                    <div>
+                        <img src="../../build/img/bank10.jpg" alt="банк">
+                    </div>
+                    <div>
+                        <img src="../../build/img/bank9.jpg" alt="банк">
+                    </div>
+                    <div>
+                        <img src="../../build/img/bank15.jpg" alt="банк">
+                    </div>
+                    <div>
+                        <img src="../../build/img/bank11.jpg" alt="банк">
+                    </div>
+                    <div>
+                        <img src="../../build/img/bank12.jpg" alt="банк">
+                    </div>
+                    <div>
+                        <img src="../../build/img/bank13.jpg" alt="банк">
+                    </div>
+                    <div>
+                        <img src="../../build/img/bank14.jpg" alt="банк">
+                    </div>
+
+                    <div>
+                        <img src="../../build/img/bank16.jpg" alt="банк">
+                    </div>
+                    <div>
                         <img src="../../build/img/bank1.jpg" alt="банк">
+                    </div>
+                    <div>
+                        <img src="../../build/img/bank18.jpg" alt="банк">
                     </div>
                 </div>
             </div>
@@ -336,7 +489,7 @@
                                     <p>Пробег: <span>111 000 км</span></p>
                                 </div>
                                 <p class="arrivals-card-price">369 000 руб</p>
-                                <div class="arrivals-card-btn"><span>подробнее</span></div>
+                                <a href="#" class="arrivals-card-btn"><span>подробнее</span></a>
                             </div>
                         </div>
                     </div>
@@ -352,7 +505,7 @@
                                     <p>Пробег: <span>111 000 км</span></p>
                                 </div>
                                 <p class="arrivals-card-price">369 000 руб</p>
-                                <div class="arrivals-card-btn"><span>подробнее</span></div>
+                                <a href="#" class="arrivals-card-btn"><span>подробнее</span></a>
                             </div>
                         </div>
                     </div>
@@ -368,7 +521,7 @@
                                     <p>Пробег: <span>111 000 км</span></p>
                                 </div>
                                 <p class="arrivals-card-price">369 000 руб</p>
-                                <div class="arrivals-card-btn"><span>подробнее</span></div>
+                                <a href="#" class="arrivals-card-btn"><span>подробнее</span></a>
                             </div>
                         </div>
                     </div>
@@ -384,7 +537,7 @@
                                     <p>Пробег: <span>111 000 км</span></p>
                                 </div>
                                 <p class="arrivals-card-price">369 000 руб</p>
-                                <div class="arrivals-card-btn"><span>подробнее</span></div>
+                                <a href="#" class="arrivals-card-btn"><span>подробнее</span></a>
                             </div>
                         </div>
                     </div>
@@ -400,7 +553,7 @@
                                     <p>Пробег: <span>111 000 км</span></p>
                                 </div>
                                 <p class="arrivals-card-price">369 000 руб</p>
-                                <div class="arrivals-card-btn"><span>подробнее</span></div>
+                                <a href="#" class="arrivals-card-btn"><span>подробнее</span></a>
                             </div>
                         </div>
                     </div>
@@ -452,71 +605,30 @@
         </div>
         <div class="pop-up-overlay-wrapper">
             <div class="overlay-pop-up"></div>
-            <div class="pop-up-wrapper">
-    <div class="pop-up-add-call">
-        <h4 class="pop-up-title">Заказать звонок</h4>
-        <form action="#">
-            <div class="field field-pop-up-add-call">
-                <p>Имя*</p>
-                <input class="input-sections input-pop-up-add-call" type="text" name="name" value="">
-            </div>
-            <div class="field field-pop-up-add-call">
-                <p>Телефон*</p>
-                <input class="input-sections input-pop-up-add-call" type="tel" name="phone" value="">
-            </div>
-            <div class="button-checkbox-wrp button-sections-wrp">
-                <label class="checkbox checkbox-agree">
-                    <input type="checkbox" />
-                    <div class="checkbox__text"><span>Даю согласие на обработку <a href="#">персональных данных</a></span></div>
-                </label>
-                <input class="button input-sections input-pop-up-add-call button-disabled" type="submit" name="button" value="Отправить заявку" disabled>
-            </div>
-        </form>
-        <div class="pop-up-add-call-close-btn"></div>
-    </div>
-
-    <div class="pop-up-submit-app">
-        <h4 class="pop-up-title">Оставить заявку</h4>
-        <form action="#">
-            <div class="field field-pop-up-add-call">
-                <p>Имя*</p>
-                <input class="input-sections input-pop-up-add-call" type="text" name="name" value="">
-            </div>
-            <div class="field field-pop-up-add-call">
-                <p>Телефон*</p>
-                <input class="input-sections input-pop-up-add-call" type="tel" name="phone" value="">
-            </div>
-            <div class="button-checkbox-wrp button-sections-wrp">
-                <label class="checkbox checkbox-agree">
-                    <input type="checkbox" />
-                    <div class="checkbox__text"><span>Даю согласие на обработку <a href="#">персональных данных</a></span></div>
-                </label>
-                <input class="button input-sections input-pop-up-add-call button-disabled" type="submit" name="button" value="Отправить заявку" disabled>
-            </div>
-        </form>
-        <div class="pop-up-submit-app-close-btn"></div>
-    </div>
-
-    <div class="pop-up-thnx">
-        <div class="pop-up-thnx-content">
-            <h4 class="pop-up-title-thnx">Cпасибо!</h4>
-            <p>Заявка на обратный звонок <br>успешно отправлена. Мы свяжемся <br> с Вами в течение n минут.</p>
+            <div class="form-block pop-up-form-block">
+    <form action="#">
+        <p class="form-block-title form-block-title-pop-up">У вас есть вопросы?</p>
+        <div class="form-block-field">
+            <p class="form-block-subtitle">Имя</p>
+            <input type="text" name="name" class="form-block-input">
         </div>
-        <div class="pop-up-thnx-close-btn"></div>
-    </div>
-
-    <div class="pop-up-phones">
-        <div class="pop-up-phones-block pop-up-phones-block1">
-            <a href="https://wa.me/79112313993">+7 (911) 231 39 93</a>
-            <a href="https://wa.me/79112313993" class="WhatsApp-text">WhatsApp</a>
+        <div class="form-block-field">
+            <p class="form-block-subtitle">Телефон</p>
+            <input type="tel" name="phone" class="form-block-input" placeholder="+7">
         </div>
-        <div class="pop-up-phones-block pop-up-phones-block2">
-            <a href="tel:+388124099021">8 (812) 409-90-21</a>
-            <p class="order-call-btn">Заказать звонок</p>
+        <div class="form-block-field">
+            <p class="form-block-subtitle">Комментарий</p>
+            <textarea class="credit-form-textarea pop-up-textarea" name="name"></textarea>
         </div>
-        <div class="pop-up-phones-close-btn"></div>
-    </div>
+        <input class="send-form-btn" type="submit" value="ОТПРАВИТЬ">
+    </form>
+    <div class="pop-up-close-btn"></div>
+</div>
 
+<div class="pop-up-thnx">
+    <p class="form-block-title form-block-title-pop-up">Cпасибо!</p>
+    <p>Ваша заявка отправлена. В течение 1 часа <br> Вам перезвонит наш менеджер</p>
+    <div class="pop-up-close-btn"></div>
 </div>
 
         </div>
@@ -535,6 +647,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="../../build/js/form.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="../../build/js/form.js"></script>
     <script src="../../build/js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
     <script src="../../build/js/wordBreak.js"></script>

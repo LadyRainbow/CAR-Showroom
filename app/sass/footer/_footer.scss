@@ -12,6 +12,9 @@ footer {
         span {
             color: $buttonRed;
         }
+        &:hover {
+            color: $buttonRed;
+        }
     }
     .footer-nav-list {
         font-family: 'MuseoSansCyrl-700';
@@ -28,6 +31,12 @@ footer {
                 height: 1px;
                 background-color: rgb(255, 255, 255);
                 opacity: 0.341;
+            }
+            &:hover {
+                color: $buttonRed;
+                &:after {
+                    background-color: $buttonRed;
+                }
             }
         }
         li + li {

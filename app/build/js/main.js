@@ -1,7 +1,36 @@
 $(document).ready(function () {
 
     // call pop-up
-    var $callbackBtn = $('callback-btn');
+    var $callbackBtn = $('.callback-btn');
+    var $popUpCloseBtn = $('.pop-up-close-btn');
+    var $popUpOverlay  = $('.pop-up-overlay-wrapper ');
+    var $overlay  = $('.overlay-pop-up');
+    var $popUpThnx  = $('.pop-up-thnx');
+    var $popUpForm  = $('.pop-up-form-block');
+
+    $callbackBtn.click(function () {
+        $popUpOverlay.fadeIn();
+        $popUpForm.fadeIn();
+    });
+
+    $popUpCloseBtn.click(function () {
+        $popUpForm.fadeOut();
+        $popUpThnx.fadeOut();
+        $popUpOverlay.fadeOut();
+    });
+
+    $overlay.click(function () {
+        $popUpForm.fadeOut();
+        $popUpThnx.fadeOut();
+        $popUpOverlay.fadeOut();
+    });
+
+    function success () {
+        $popUpForm.fadeOut();
+        $popUpThnx.fadeIn();
+    };
+
+
 
      $("[data-toggle=popover]").popover({
       trigger: 'focus',
@@ -193,6 +222,9 @@ $(document).ready(function () {
     e.preventDefault();
     });
 
+    $("input[name='phone']").mask("+79999999999");
+    $("input[name='birthday']").mask("99/99/9999");
+
     // MAP
     //Дождёмся загрузки API и готовности DOM.
     ymaps.ready(init);
@@ -207,5 +239,7 @@ $(document).ready(function () {
        myMap.behaviors.disable('scrollZoom');
        // myMap.behaviors.disable('drag');
     };
+
+
 
 });

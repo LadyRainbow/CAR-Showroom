@@ -416,6 +416,18 @@
     .filter-block.filter-block-buyout {
         margin-top: 40px;
     }
+    .pop-up-close-btn {
+        top: -34px;
+        right: 0;
+    }
+    .form-block.pop-up-form-block, .pop-up-thnx {
+        width: 90%;
+        left: 5%;
+    }
+    .form-block.pop-up-form-block {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 @media (max-width: 422px) {
     .app {

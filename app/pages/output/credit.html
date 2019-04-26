@@ -5,13 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Car showroom</title>
-  <link rel="shortcut icon" type="image/png" href="https://auto.ndtvimg.com/car-images/medium/maruti-suzuki/alto-800/maruti-suzuki-alto-800.jpg?v=1_1"/>
+  <link rel="shortcut icon" type="image/png" href="../../build/img/favicon.ico"/>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="../../build/css/bootstrap.css">
   <link rel="stylesheet" href="../../build/css/jquery.mCustomScrollbar.css">
   <link rel="stylesheet" href="../../build/css/selectize.css">
-  <link rel="stylesheet" href="../../build/css/YouTubePopUp.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="../../build/css/style.css">
@@ -140,41 +139,41 @@
                 </div>
             </div>
             <div class="col-lg-4 col-12">
-                <div class="credit-form">
-                    <p class="credit-form-title">Заявка на автокредит</p>
-                    <div class="subtitle-input-wrp">
-                        <p class="credit-form-subtitle">Дата рождения</p>
-                        <input type="text" class="credit-form-input">
-                    </div>
-                    <div class="subtitle-input-wrp">
-                        <p class="credit-form-subtitle">Первоначальный взнос, руб</p>
-                        <input type="text" class="credit-form-input">
-                    </div>
-                    <div class="subtitle-input-wrp">
-                        <p class="credit-form-subtitle">Прописка</p>
-                        <div class="select-inStock-wrp">
-                            <select class="select-simple" name="cars[]" placeholder="Выберите город из списка">
-                              <option value="1">Москва</option>
-                              <option value="2">Орел</option>
-                            </select>
+                <form action="#">
+                    <div class="credit-form">
+                        <p class="credit-form-title">Заявка на автокредит</p>
+                        <div class="subtitle-input-wrp">
+                            <p class="credit-form-subtitle">Дата рождения</p>
+                            <input type="text" name="birthday" class="credit-form-input">
                         </div>
+                        <div class="subtitle-input-wrp">
+                            <p class="credit-form-subtitle">Первоначальный взнос, руб</p>
+                            <input type="text" name="count" class="credit-form-input">
+                        </div>
+                        <div class="subtitle-input-wrp">
+                            <p class="credit-form-subtitle">Прописка</p>
+                            <div class="select-inStock-wrp">
+                                <select class="select-simple" name="cars[]" placeholder="Выберите город из списка">
+                                  <option value="1">Москва</option>
+                                  <option value="2">Орел</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="subtitle-input-wrp">
+                            <p class="credit-form-subtitle">ФИО</p>
+                            <input type="text" name="name" class="credit-form-input">
+                        </div>
+                        <div class="subtitle-input-wrp">
+                            <p class="credit-form-subtitle">Телефон</p>
+                            <input type="tel" name="phone" class="credit-form-input" placeholder="+7">
+                        </div>
+                        <div class="subtitle-input-wrp">
+                            <p class="credit-form-subtitle">Ваш комментарий</p>
+                            <textarea class="credit-form-textarea" name="name"></textarea>
+                        </div>
+                        <input class="credit-form-btn" type="submit" value="ОТПРАВИТЬ">
                     </div>
-                    <div class="subtitle-input-wrp">
-                        <p class="credit-form-subtitle">ФИО</p>
-                        <input type="text" class="credit-form-input">
-                    </div>
-                    <div class="subtitle-input-wrp">
-                        <p class="credit-form-subtitle">Телефон</p>
-                        <input type="text" class="credit-form-input">
-                    </div>
-                    <div class="subtitle-input-wrp">
-                        <p class="credit-form-subtitle">Ваш комментарий</p>
-                        <textarea class="credit-form-textarea" name="name"></textarea>
-                    </div>
-                    <div class="credit-form-btn">
-                        <span>ОТПРАВИТЬ</span>
-                    </div>
-                </div>
+                </form>
                 <p class="additional-discount-message">Дополнительная скидка при обмене вашего автомобиля по программе <a href="#">Trade-in</a></p>
             </div>
         </div>
@@ -209,22 +208,59 @@
             <div class="banks-slider-wrp">
                 <div class="banks-slider">
                     <div>
-                        <img src="../../build/img/bank1.jpg" alt="банк">
-                    </div>
-                    <div>
                         <img src="../../build/img/bank2.jpg" alt="банк">
                     </div>
                     <div>
-                        <img src="../../build/img/bank3.jpg" alt="банк">
+                        <img src="../../build/img/bank17.jpg" alt="банк">
                     </div>
                     <div>
                         <img src="../../build/img/bank4.jpg" alt="банк">
                     </div>
                     <div>
+                        <img src="../../build/img/bank8.jpg" alt="банк">
+                    </div>
+                    <div>
                         <img src="../../build/img/bank5.jpg" alt="банк">
                     </div>
                     <div>
+                        <img src="../../build/img/bank6.jpg" alt="банк">
+                    </div>
+                    <div>
+                        <img src="../../build/img/bank3.jpg" alt="банк">
+                    </div>
+                    <div>
+                        <img src="../../build/img/bank7.jpg" alt="банк">
+                    </div>
+                    <div>
+                        <img src="../../build/img/bank10.jpg" alt="банк">
+                    </div>
+                    <div>
+                        <img src="../../build/img/bank9.jpg" alt="банк">
+                    </div>
+                    <div>
+                        <img src="../../build/img/bank15.jpg" alt="банк">
+                    </div>
+                    <div>
+                        <img src="../../build/img/bank11.jpg" alt="банк">
+                    </div>
+                    <div>
+                        <img src="../../build/img/bank12.jpg" alt="банк">
+                    </div>
+                    <div>
+                        <img src="../../build/img/bank13.jpg" alt="банк">
+                    </div>
+                    <div>
+                        <img src="../../build/img/bank14.jpg" alt="банк">
+                    </div>
+
+                    <div>
+                        <img src="../../build/img/bank16.jpg" alt="банк">
+                    </div>
+                    <div>
                         <img src="../../build/img/bank1.jpg" alt="банк">
+                    </div>
+                    <div>
+                        <img src="../../build/img/bank18.jpg" alt="банк">
                     </div>
                 </div>
             </div>
@@ -274,71 +310,30 @@
         </div>
         <div class="pop-up-overlay-wrapper">
             <div class="overlay-pop-up"></div>
-            <div class="pop-up-wrapper">
-    <div class="pop-up-add-call">
-        <h4 class="pop-up-title">Заказать звонок</h4>
-        <form action="#">
-            <div class="field field-pop-up-add-call">
-                <p>Имя*</p>
-                <input class="input-sections input-pop-up-add-call" type="text" name="name" value="">
-            </div>
-            <div class="field field-pop-up-add-call">
-                <p>Телефон*</p>
-                <input class="input-sections input-pop-up-add-call" type="tel" name="phone" value="">
-            </div>
-            <div class="button-checkbox-wrp button-sections-wrp">
-                <label class="checkbox checkbox-agree">
-                    <input type="checkbox" />
-                    <div class="checkbox__text"><span>Даю согласие на обработку <a href="#">персональных данных</a></span></div>
-                </label>
-                <input class="button input-sections input-pop-up-add-call button-disabled" type="submit" name="button" value="Отправить заявку" disabled>
-            </div>
-        </form>
-        <div class="pop-up-add-call-close-btn"></div>
-    </div>
-
-    <div class="pop-up-submit-app">
-        <h4 class="pop-up-title">Оставить заявку</h4>
-        <form action="#">
-            <div class="field field-pop-up-add-call">
-                <p>Имя*</p>
-                <input class="input-sections input-pop-up-add-call" type="text" name="name" value="">
-            </div>
-            <div class="field field-pop-up-add-call">
-                <p>Телефон*</p>
-                <input class="input-sections input-pop-up-add-call" type="tel" name="phone" value="">
-            </div>
-            <div class="button-checkbox-wrp button-sections-wrp">
-                <label class="checkbox checkbox-agree">
-                    <input type="checkbox" />
-                    <div class="checkbox__text"><span>Даю согласие на обработку <a href="#">персональных данных</a></span></div>
-                </label>
-                <input class="button input-sections input-pop-up-add-call button-disabled" type="submit" name="button" value="Отправить заявку" disabled>
-            </div>
-        </form>
-        <div class="pop-up-submit-app-close-btn"></div>
-    </div>
-
-    <div class="pop-up-thnx">
-        <div class="pop-up-thnx-content">
-            <h4 class="pop-up-title-thnx">Cпасибо!</h4>
-            <p>Заявка на обратный звонок <br>успешно отправлена. Мы свяжемся <br> с Вами в течение n минут.</p>
+            <div class="form-block pop-up-form-block">
+    <form action="#">
+        <p class="form-block-title form-block-title-pop-up">У вас есть вопросы?</p>
+        <div class="form-block-field">
+            <p class="form-block-subtitle">Имя</p>
+            <input type="text" name="name" class="form-block-input">
         </div>
-        <div class="pop-up-thnx-close-btn"></div>
-    </div>
-
-    <div class="pop-up-phones">
-        <div class="pop-up-phones-block pop-up-phones-block1">
-            <a href="https://wa.me/79112313993">+7 (911) 231 39 93</a>
-            <a href="https://wa.me/79112313993" class="WhatsApp-text">WhatsApp</a>
+        <div class="form-block-field">
+            <p class="form-block-subtitle">Телефон</p>
+            <input type="tel" name="phone" class="form-block-input" placeholder="+7">
         </div>
-        <div class="pop-up-phones-block pop-up-phones-block2">
-            <a href="tel:+388124099021">8 (812) 409-90-21</a>
-            <p class="order-call-btn">Заказать звонок</p>
+        <div class="form-block-field">
+            <p class="form-block-subtitle">Комментарий</p>
+            <textarea class="credit-form-textarea pop-up-textarea" name="name"></textarea>
         </div>
-        <div class="pop-up-phones-close-btn"></div>
-    </div>
+        <input class="send-form-btn" type="submit" value="ОТПРАВИТЬ">
+    </form>
+    <div class="pop-up-close-btn"></div>
+</div>
 
+<div class="pop-up-thnx">
+    <p class="form-block-title form-block-title-pop-up">Cпасибо!</p>
+    <p>Ваша заявка отправлена. В течение 1 часа <br> Вам перезвонит наш менеджер</p>
+    <div class="pop-up-close-btn"></div>
 </div>
 
         </div>
@@ -357,6 +352,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="../../build/js/form.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="../../build/js/form.js"></script>
     <script src="../../build/js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
     <script src="../../build/js/wordBreak.js"></script>

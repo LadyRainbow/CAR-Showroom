@@ -50,75 +50,77 @@
     </div>
     <section class="filter-block-wrp filter-block-wrp-buyout">
         <div class="container">
-            <div class="filter-block filter-block-buyout">
-                <div class="row">
-                    <div class="col-xl-4 col-lg-6">
-                        <div class="filter-block-item">
-                            <p class="filter-title">Марка</p>
-                            <select class="select-simple" name="cars[]" placeholder="Выберите марку авто">
-                              <option value="AL">Alabama</option>
-                              <option value="WY">Wyoming</option>
-                            </select>
+            <form action="#">
+                <div class="filter-block filter-block-buyout">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-6">
+                            <div class="filter-block-item">
+                                <p class="filter-title">Марка</p>
+                                <select class="select-simple" name="cars[]" placeholder="Выберите марку авто">
+                                  <option value="AL">Alabama</option>
+                                  <option value="WY">Wyoming</option>
+                                </select>
+                            </div>
+                            <div class="filter-block-item">
+                                <p class="filter-title">Пробег, км</p>
+                                <input class="buyout-input" type="text" name="count" value="">
+                            </div>
+                            <div class="filter-block-item">
+                                <p class="filter-title">Цена, руб</p>
+                                <div class="polzunok-wrp">
+                                    <p class="polzunok-value">до <span id="result-polzunok-price"></span> <span>руб</span></p>
+                                    <div id="polzunok-price" class="polzunok"></div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="filter-block-item">
-                            <p class="filter-title">Пробег, км</p>
-                            <input class="buyout-input" type="text" name="" value="">
+                        <div class="col-xl-4 col-lg-6">
+                            <div class="filter-block-item">
+                                <p class="filter-title">Модель</p>
+                                <select class="select-simple" name="cars[]" placeholder="Выберите модель авто">
+                                  <option value="AL">Alabama</option>
+                                  <option value="WY">Wyoming</option>
+                                </select>
+                            </div>
+                            <div class="filter-block-item">
+                                <p class="filter-title">Хозяева по ПТС</p>
+                                <select class="select-simple" name="cars[]" placeholder="Выберите из списка">
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                </select>
+                            </div>
+                            <div class="filter-block-item">
+                                <p class="filter-title">Ваше имя</p>
+                                <input class="buyout-input" type="text" name="name" value="">
+                            </div>
                         </div>
-                        <div class="filter-block-item">
-                            <p class="filter-title">Цена, руб</p>
-                            <div class="polzunok-wrp">
-                                <p class="polzunok-value">до <span id="result-polzunok-price"></span> <span>руб</span></p>
-                                <div id="polzunok-price" class="polzunok"></div>
+                        <div class="col-xl-4 offset-xl-0 col-lg-6 offset-lg-3">
+                            <div class="filter-block-item">
+                                <p class="filter-title">Год выпуска, от</p>
+                                <select class="select-simple" name="cars[]" placeholder="Выберите год">
+                                  <option value="1">1980</option>
+                                  <option value="2">1970</option>
+                                </select>
+                            </div>
+                            <div class="filter-block-item">
+                                <p class="filter-title">КПП</p>
+                                <select class="select-simple" name="cars[]" placeholder="Выберите из списка">
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                </select>
+                            </div>
+                            <div class="filter-block-item">
+                                <p class="filter-title">Телефон</p>
+                                <input type="tel" name="phone" class="buyout-input" placeholder="+7">
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-6">
-                        <div class="filter-block-item">
-                            <p class="filter-title">Модель</p>
-                            <select class="select-simple" name="cars[]" placeholder="Выберите модель авто">
-                              <option value="AL">Alabama</option>
-                              <option value="WY">Wyoming</option>
-                            </select>
-                        </div>
-                        <div class="filter-block-item">
-                            <p class="filter-title">Хозяева по ПТС</p>
-                            <select class="select-simple" name="cars[]" placeholder="Выберите из списка">
-                              <option value="1">1</option>
-                              <option value="2">2</option>
-                            </select>
-                        </div>
-                        <div class="filter-block-item">
-                            <p class="filter-title">Ваше имя</p>
-                            <input class="buyout-input" type="text" name="" value="">
-                        </div>
-                    </div>
-                    <div class="col-xl-4 offset-xl-0 col-lg-6 offset-lg-3">
-                        <div class="filter-block-item">
-                            <p class="filter-title">Год выпуска, от</p>
-                            <select class="select-simple" name="cars[]" placeholder="Выберите год">
-                              <option value="1">1980</option>
-                              <option value="2">1970</option>
-                            </select>
-                        </div>
-                        <div class="filter-block-item">
-                            <p class="filter-title">КПП</p>
-                            <select class="select-simple" name="cars[]" placeholder="Выберите из списка">
-                              <option value="1">1</option>
-                              <option value="2">2</option>
-                            </select>
-                        </div>
-                        <div class="filter-block-item">
-                            <p class="filter-title">Телефон</p>
-                            <input class="buyout-input" type="text" name="" value="">
+                    <div class="row">
+                        <div class="col-12">
+                            <input class="send-btn" type="submit" name="" value="ОТПРАВИТЬ">
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="send-btn"><span>ОТПРАВИТЬ</span></div>
-                    </div>
-                </div>
-            </div>
+            </form>
         </div>
     </section>
     <div class="container">
@@ -137,22 +139,59 @@
             <div class="banks-slider-wrp">
                 <div class="banks-slider">
                     <div>
-                        <img src="../../build/img/bank1.jpg" alt="банк">
-                    </div>
-                    <div>
                         <img src="../../build/img/bank2.jpg" alt="банк">
                     </div>
                     <div>
-                        <img src="../../build/img/bank3.jpg" alt="банк">
+                        <img src="../../build/img/bank17.jpg" alt="банк">
                     </div>
                     <div>
                         <img src="../../build/img/bank4.jpg" alt="банк">
                     </div>
                     <div>
+                        <img src="../../build/img/bank8.jpg" alt="банк">
+                    </div>
+                    <div>
                         <img src="../../build/img/bank5.jpg" alt="банк">
                     </div>
                     <div>
+                        <img src="../../build/img/bank6.jpg" alt="банк">
+                    </div>
+                    <div>
+                        <img src="../../build/img/bank3.jpg" alt="банк">
+                    </div>
+                    <div>
+                        <img src="../../build/img/bank7.jpg" alt="банк">
+                    </div>
+                    <div>
+                        <img src="../../build/img/bank10.jpg" alt="банк">
+                    </div>
+                    <div>
+                        <img src="../../build/img/bank9.jpg" alt="банк">
+                    </div>
+                    <div>
+                        <img src="../../build/img/bank15.jpg" alt="банк">
+                    </div>
+                    <div>
+                        <img src="../../build/img/bank11.jpg" alt="банк">
+                    </div>
+                    <div>
+                        <img src="../../build/img/bank12.jpg" alt="банк">
+                    </div>
+                    <div>
+                        <img src="../../build/img/bank13.jpg" alt="банк">
+                    </div>
+                    <div>
+                        <img src="../../build/img/bank14.jpg" alt="банк">
+                    </div>
+
+                    <div>
+                        <img src="../../build/img/bank16.jpg" alt="банк">
+                    </div>
+                    <div>
                         <img src="../../build/img/bank1.jpg" alt="банк">
+                    </div>
+                    <div>
+                        <img src="../../build/img/bank18.jpg" alt="банк">
                     </div>
                 </div>
             </div>

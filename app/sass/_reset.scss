@@ -139,3 +139,20 @@ button {
 .card {
     border: none;
 }
+
+input:-webkit-autofill {
+  border: 1px solid #e1e1e1;
+  -webkit-text-fill-color: #002c3e;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  -o-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+  font-family: 'MuseoSansCyrl-500';
+  font-size: 14px; }
+  input:-webkit-autofill:focus {
+    border: 1px solid #99abb2;
+    -webkit-text-fill-color: #002c3e;
+    -webkit-transition: background-color 5000s ease-in-out 0s;
+    -o-transition: background-color 5000s ease-in-out 0s;
+    transition: background-color 5000s ease-in-out 0s;
+    font-family: 'MuseoSansCyrl-500';
+    font-size: 14px; }

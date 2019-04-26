@@ -16,73 +16,75 @@
     </div>
     <section class="filter-block-wrp filter-block-wrp-inStock">
         <div class="container">
-            <div class="filter-block filter-block-inStock">
-                <div class="row">
-                    <div class="col-xl-4 col-lg-6">
-                        <div class="filter-block-item">
-                            <p class="filter-title">Марка и модель</p>
-                            <select class="select-multiple dropdownCssClass" name="cars[]" multiple="multiple">
-                              <option value="AL">Alabama</option>
-                              <option value="WY">Wyoming</option>
-                            </select>
-                        </div>
-                        <div class="filter-block-item">
-                            <p class="filter-title">Год выпуска, от</p>
-                            <select class="select-simple" name="cars[]" placeholder="Выберите год">
-                              <option value="1">1980</option>
-                              <option value="2">1970</option>
-                            </select>
-                        </div>
-                        <div class="filter-block-item">
-                            <p class="filter-title">Привод</p>
-                            <select class="select-simple" name="cars[]" placeholder="Выберите тип привода">
-                              <option value="1">Передний</option>
-                              <option value="2">Задний</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6">
-                        <div class="filter-block-item">
-                            <p class="filter-title">Цена, руб</p>
-                            <div class="polzunok-wrp">
-                                <p class="polzunok-value">до <span id="result-polzunok-price"></span> <span>руб</span></p>
-                                <div id="polzunok-price" class="polzunok"></div>
+            <form action="#">
+                <div class="filter-block filter-block-inStock">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-6">
+                            <div class="filter-block-item">
+                                <p class="filter-title">Марка и модель</p>
+                                <select class="select-multiple dropdownCssClass" name="cars[]" multiple="multiple">
+                                  <option value="AL">Alabama</option>
+                                  <option value="WY">Wyoming</option>
+                                </select>
+                            </div>
+                            <div class="filter-block-item">
+                                <p class="filter-title">Год выпуска, от</p>
+                                <select class="select-simple" name="cars[]" placeholder="Выберите год">
+                                  <option value="1">1980</option>
+                                  <option value="2">1970</option>
+                                </select>
+                            </div>
+                            <div class="filter-block-item">
+                                <p class="filter-title">Привод</p>
+                                <select class="select-simple" name="cars[]" placeholder="Выберите тип привода">
+                                  <option value="1">Передний</option>
+                                  <option value="2">Задний</option>
+                                </select>
                             </div>
                         </div>
-                        <div class="filter-block-item">
-                            <p class="filter-title">Коробка передач</p>
-                            <select class="select-simple" name="cars[]" placeholder="Выберите тип КП">
-                              <option value="1">Механическая</option>
-                              <option value="2">Автоматическая</option>
-                            </select>
-                        </div>
-                        <div class="filter-block-item">
-                            <p class="filter-title">Мощность, л.с.</p>
-                            <div class="polzunok-wrp">
-                                <p class="polzunok-value">до <span id="result-polzunok-power"></span> <span>л.с.</span></p>
-                                <div id="polzunok-power" class="polzunok"></div>
+                        <div class="col-xl-4 col-lg-6">
+                            <div class="filter-block-item">
+                                <p class="filter-title">Цена, руб</p>
+                                <div class="polzunok-wrp">
+                                    <p class="polzunok-value">до <span id="result-polzunok-price"></span> <span>руб</span></p>
+                                    <div id="polzunok-price" class="polzunok"></div>
+                                </div>
+                            </div>
+                            <div class="filter-block-item">
+                                <p class="filter-title">Коробка передач</p>
+                                <select class="select-simple" name="cars[]" placeholder="Выберите тип КП">
+                                  <option value="1">Механическая</option>
+                                  <option value="2">Автоматическая</option>
+                                </select>
+                            </div>
+                            <div class="filter-block-item">
+                                <p class="filter-title">Мощность, л.с.</p>
+                                <div class="polzunok-wrp">
+                                    <p class="polzunok-value">до <span id="result-polzunok-power"></span> <span>л.с.</span></p>
+                                    <div id="polzunok-power" class="polzunok"></div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xl-4 offset-xl-0 col-lg-6 offset-lg-3">
-                        <div class="filter-block-item">
-                            <p class="filter-title">Кузов</p>
-                            <select class="select-simple" name="cars[]" placeholder="Выберите тип кузова">
-                              <option value="1">Седан</option>
-                              <option value="2">Хэтчбек</option>
-                            </select>
+                        <div class="col-xl-4 offset-xl-0 col-lg-6 offset-lg-3">
+                            <div class="filter-block-item">
+                                <p class="filter-title">Кузов</p>
+                                <select class="select-simple" name="cars[]" placeholder="Выберите тип кузова">
+                                  <option value="1">Седан</option>
+                                  <option value="2">Хэтчбек</option>
+                                </select>
+                            </div>
+                            <div class="filter-block-item">
+                                <p class="filter-title">Двигатель</p>
+                                <select class="select-simple" name="cars[]" placeholder="Выберите тип двигателя">
+                                  <option value="1">бензиновые</option>
+                                  <option value="2">дизельные</option>
+                                </select>
+                            </div>
+                            <button class="choose-auto-btn"><span>ПОДОБРАТЬ АВТОМОБИЛЬ</span></button>
                         </div>
-                        <div class="filter-block-item">
-                            <p class="filter-title">Двигатель</p>
-                            <select class="select-simple" name="cars[]" placeholder="Выберите тип двигателя">
-                              <option value="1">бензиновые</option>
-                              <option value="2">дизельные</option>
-                            </select>
-                        </div>
-                        <div class="choose-auto-btn"><span>ПОДОБРАТЬ АВТОМОБИЛЬ</span></div>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
     </section>
     <div class="container">
@@ -139,7 +141,7 @@
                                                 <p class="message-warranty">Официальная гарантия Ford</p>
                                                 <div class="inner-wrp">
                                                     <p class="message-credit-available">Доступен в кредит <br>от <span>29 717 р.</span> без взноса</p>
-                                                    <div class="inStock-card-btn"><span>заявка в кредит</span></div>
+                                                    <a href="#" class="inStock-card-btn"><span>заявка в кредит</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -187,7 +189,7 @@
                                                 <p class="message-warranty">Официальная гарантия Ford</p>
                                                 <div class="inner-wrp">
                                                     <p class="message-credit-available">Доступен в кредит <br>от <span>29 717 р.</span> без взноса</p>
-                                                    <div class="inStock-card-btn"><span>заявка в кредит</span></div>
+                                                    <a href="#" class="inStock-card-btn"><span>заявка в кредит</span></a>
                                                 </div>
                                             </div>
                                         </div>

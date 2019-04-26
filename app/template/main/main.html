@@ -14,73 +14,75 @@
     </section>
     <section class="filter-block-wrp">
         <div class="container">
-            <div class="filter-block">
-                <div class="row">
-                    <div class="col-xl-4 col-lg-6">
-                        <div class="filter-block-item">
-                            <p class="filter-title">Марка и модель</p>
-                            <select class="select-multiple dropdownCssClass" name="cars[]" multiple="multiple">
-                              <option value="AL">Alabama</option>
-                              <option value="WY">Wyoming</option>
-                            </select>
-                        </div>
-                        <div class="filter-block-item">
-                            <p class="filter-title">Год выпуска, от</p>
-                            <select class="select-simple" name="cars[]" placeholder="Выберите год">
-                              <option value="1">1980</option>
-                              <option value="2">1970</option>
-                            </select>
-                        </div>
-                        <div class="filter-block-item">
-                            <p class="filter-title">Привод</p>
-                            <select class="select-simple" name="cars[]" placeholder="Выберите тип привода">
-                              <option value="1">Передний</option>
-                              <option value="2">Задний</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6">
-                        <div class="filter-block-item">
-                            <p class="filter-title">Цена, руб</p>
-                            <div class="polzunok-wrp">
-                                <p class="polzunok-value">до <span id="result-polzunok-price"></span> <span>руб</span></p>
-                                <div id="polzunok-price" class="polzunok"></div>
+            <form action="#">
+                <div class="filter-block">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-6">
+                            <div class="filter-block-item">
+                                <p class="filter-title">Марка и модель</p>
+                                <select class="select-multiple dropdownCssClass" name="cars[]" multiple="multiple">
+                                  <option value="AL">Alabama</option>
+                                  <option value="WY">Wyoming</option>
+                                </select>
+                            </div>
+                            <div class="filter-block-item">
+                                <p class="filter-title">Год выпуска, от</p>
+                                <select class="select-simple" name="cars[]" placeholder="Выберите год">
+                                  <option value="1">1980</option>
+                                  <option value="2">1970</option>
+                                </select>
+                            </div>
+                            <div class="filter-block-item">
+                                <p class="filter-title">Привод</p>
+                                <select class="select-simple" name="cars[]" placeholder="Выберите тип привода">
+                                  <option value="1">Передний</option>
+                                  <option value="2">Задний</option>
+                                </select>
                             </div>
                         </div>
-                        <div class="filter-block-item">
-                            <p class="filter-title">Коробка передач</p>
-                            <select class="select-simple" name="cars[]" placeholder="Выберите тип КП">
-                              <option value="1">Механическая</option>
-                              <option value="2">Автоматическая</option>
-                            </select>
-                        </div>
-                        <div class="filter-block-item">
-                            <p class="filter-title">Мощность, л.с.</p>
-                            <div class="polzunok-wrp">
-                                <p class="polzunok-value">до <span id="result-polzunok-power"></span> <span>л.с.</span></p>
-                                <div id="polzunok-power" class="polzunok"></div>
+                        <div class="col-xl-4 col-lg-6">
+                            <div class="filter-block-item">
+                                <p class="filter-title">Цена, руб</p>
+                                <div class="polzunok-wrp">
+                                    <p class="polzunok-value">до <span id="result-polzunok-price"></span> <span>руб</span></p>
+                                    <div id="polzunok-price" class="polzunok"></div>
+                                </div>
+                            </div>
+                            <div class="filter-block-item">
+                                <p class="filter-title">Коробка передач</p>
+                                <select class="select-simple" name="cars[]" placeholder="Выберите тип КП">
+                                  <option value="1">Механическая</option>
+                                  <option value="2">Автоматическая</option>
+                                </select>
+                            </div>
+                            <div class="filter-block-item">
+                                <p class="filter-title">Мощность, л.с.</p>
+                                <div class="polzunok-wrp">
+                                    <p class="polzunok-value">до <span id="result-polzunok-power"></span> <span>л.с.</span></p>
+                                    <div id="polzunok-power" class="polzunok"></div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xl-4 offset-xl-0 col-lg-6 offset-lg-3">
-                        <div class="filter-block-item">
-                            <p class="filter-title">Кузов</p>
-                            <select class="select-simple" name="cars[]" placeholder="Выберите тип кузова">
-                              <option value="1">Седан</option>
-                              <option value="2">Хэтчбек</option>
-                            </select>
+                        <div class="col-xl-4 offset-xl-0 col-lg-6 offset-lg-3">
+                            <div class="filter-block-item">
+                                <p class="filter-title">Кузов</p>
+                                <select class="select-simple" name="cars[]" placeholder="Выберите тип кузова">
+                                  <option value="1">Седан</option>
+                                  <option value="2">Хэтчбек</option>
+                                </select>
+                            </div>
+                            <div class="filter-block-item">
+                                <p class="filter-title">Двигатель</p>
+                                <select class="select-simple" name="cars[]" placeholder="Выберите тип двигателя">
+                                  <option value="1">бензиновые</option>
+                                  <option value="2">дизельные</option>
+                                </select>
+                            </div>
+                            <button class="choose-auto-btn"><span>ПОДОБРАТЬ АВТОМОБИЛЬ</span></button>
                         </div>
-                        <div class="filter-block-item">
-                            <p class="filter-title">Двигатель</p>
-                            <select class="select-simple" name="cars[]" placeholder="Выберите тип двигателя">
-                              <option value="1">бензиновые</option>
-                              <option value="2">дизельные</option>
-                            </select>
-                        </div>
-                        <div class="choose-auto-btn"><span>ПОДОБРАТЬ АВТОМОБИЛЬ</span></div>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
     </section>
     <section class="marks">
@@ -93,7 +95,7 @@
                     <div class="letter-block" data-target="a">
                         <div class="mark-item-wrp">
                             <button class="mark-item" data-target="5" role="button"  data-toggle="popover" data-content="<ul class='mark-list-links'>
-                                <li><a href='file:///E:/Codyu/%D0%94%D0%B8%D0%BC%D0%B0%D1%81_%D0%9A%D0%9E/%D0%A1%D0%BF%D0%BE%D1%80%D1%82%D0%9A%D0%BB%D1%83%D0%B1/VMF/app/pages/output/cardProduct.html'>A4 Allroad</a></li>
+                                <li><a href='#'>A4 Allroad</a></li>
                                 <li><a href='#'>A5</a></li>
                                 <li><a href='#'>Q5</a></li>
                                 <li><a href='#'>Q7</a></li>
@@ -105,7 +107,7 @@
                     <div class="letter-block" data-target="b">
                         <div class="mark-item-wrp">
                             <button class="mark-item" data-target="5" role="button"  data-toggle="popover" data-content="<ul class='mark-list-links'>
-                                <li><a href='file:///E:/Codyu/%D0%94%D0%B8%D0%BC%D0%B0%D1%81_%D0%9A%D0%9E/%D0%A1%D0%BF%D0%BE%D1%80%D1%82%D0%9A%D0%BB%D1%83%D0%B1/VMF/app/pages/output/cardProduct.html'>A4 Allroad</a></li>
+                                <li><a href='#'>A4 Allroad</a></li>
                                 <li><a href='#'>A5</a></li>
                                 <li><a href='#'>Q5</a></li>
                                 <li><a href='#'>Q7</a></li>
@@ -116,7 +118,7 @@
                     <div class="letter-block" data-target="c">
                         <div class="mark-item-wrp">
                             <button class="mark-item" data-target="5" role="button"  data-toggle="popover" data-content="<ul class='mark-list-links'>
-                                <li><a href='file:///E:/Codyu/%D0%94%D0%B8%D0%BC%D0%B0%D1%81_%D0%9A%D0%9E/%D0%A1%D0%BF%D0%BE%D1%80%D1%82%D0%9A%D0%BB%D1%83%D0%B1/VMF/app/pages/output/cardProduct.html'>A4 Allroad</a></li>
+                                <li><a href='#'>A4 Allroad</a></li>
                                 <li><a href='#'>A5</a></li>
                                 <li><a href='#'>Q5</a></li>
                                 <li><a href='#'>Q7</a></li>
@@ -124,124 +126,292 @@
                             </ul>">Chevrolet</button>
                         </div>
                         <div class="mark-item-wrp">
-                            <a href="#" class="mark-item" data-target="15">Citroen</a>
+                            <button class="mark-item" data-target="15" role="button"  data-toggle="popover" data-content="<ul class='mark-list-links'>
+                                <li><a href='#'>A4 Allroad</a></li>
+                                <li><a href='#'>A5</a></li>
+                                <li><a href='#'>Q5</a></li>
+                                <li><a href='#'>Q7</a></li>
+                                <li><a href='#'>Q8</a></li>
+                            </ul>">Citroen</button>
                         </div>
                     </div>
                     <div class="letter-block" data-target="d">
                         <div class="mark-item-wrp">
-                            <a href="#" class="mark-item" data-target="5">Daewoo </a>
+                            <button class="mark-item" data-target="5" role="button"  data-toggle="popover" data-content="<ul class='mark-list-links'>
+                                <li><a href='#'>A4 Allroad</a></li>
+                                <li><a href='#'>A5</a></li>
+                                <li><a href='#'>Q5</a></li>
+                                <li><a href='#'>Q7</a></li>
+                                <li><a href='#'>Q8</a></li>
+                            </ul>">Daewoo</button>
                         </div>
                         <div class="mark-item-wrp">
-                            <a href="#" class="mark-item" data-target="15">Dodge</a>
+                            <button class="mark-item" data-target="15" role="button"  data-toggle="popover" data-content="<ul class='mark-list-links'>
+                                <li><a href='#'>A4 Allroad</a></li>
+                                <li><a href='#'>A5</a></li>
+                                <li><a href='#'>Q5</a></li>
+                                <li><a href='#'>Q7</a></li>
+                                <li><a href='#'>Q8</a></li>
+                            </ul>">Dodge</button>
                         </div>
                     </div>
                     <div class="letter-block" data-target="f">
                         <div class="mark-item-wrp">
-                            <a href="#" class="mark-item" data-target="5">Fiat</a>
+                            <button class="mark-item" data-target="15" role="button"  data-toggle="popover" data-content="<ul class='mark-list-links'>
+                                <li><a href='#'>A4 Allroad</a></li>
+                                <li><a href='#'>A5</a></li>
+                                <li><a href='#'>Q5</a></li>
+                                <li><a href='#'>Q7</a></li>
+                                <li><a href='#'>Q8</a></li>
+                            </ul>">Fiat</button>
                         </div>
                         <div class="mark-item-wrp">
-                            <a href="#" class="mark-item" data-target="15">Ford</a>
+                            <button class="mark-item" data-target="15" role="button"  data-toggle="popover" data-content="<ul class='mark-list-links'>
+                                <li><a href='#'>A4 Allroad</a></li>
+                                <li><a href='#'>A5</a></li>
+                                <li><a href='#'>Q5</a></li>
+                                <li><a href='#'>Q7</a></li>
+                                <li><a href='#'>Q8</a></li>
+                            </ul>">Ford</button>
                         </div>
                     </div>
                     <div class="letter-block"  data-target="g">
                         <div class="mark-item-wrp">
-                            <a href="#" class="mark-item" data-target="4">Great Wall</a>
+                            <button class="mark-item" data-target="15" role="button"  data-toggle="popover" data-content="<ul class='mark-list-links'>
+                                <li><a href='#'>A4 Allroad</a></li>
+                                <li><a href='#'>A5</a></li>
+                                <li><a href='#'>Q5</a></li>
+                                <li><a href='#'>Q7</a></li>
+                                <li><a href='#'>Q8</a></li>
+                            </ul>">Great Wall</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-6">
                     <div class="letter-block"  data-target="h">
                         <div class="mark-item-wrp">
-                            <a href="#" class="mark-item" data-target="1">Honda</a>
+                            <button class="mark-item" data-target="15" role="button"  data-toggle="popover" data-content="<ul class='mark-list-links'>
+                                <li><a href='#'>A4 Allroad</a></li>
+                                <li><a href='#'>A5</a></li>
+                                <li><a href='#'>Q5</a></li>
+                                <li><a href='#'>Q7</a></li>
+                                <li><a href='#'>Q8</a></li>
+                            </ul>">Honda</button>
                         </div>
                         <div class="mark-item-wrp">
-                            <a href="#" class="mark-item" data-target="27">Hyundai</a>
+                            <button class="mark-item" data-target="15" role="button"  data-toggle="popover" data-content="<ul class='mark-list-links'>
+                                <li><a href='#'>A4 Allroad</a></li>
+                                <li><a href='#'>A5</a></li>
+                                <li><a href='#'>Q5</a></li>
+                                <li><a href='#'>Q7</a></li>
+                                <li><a href='#'>Q8</a></li>
+                            </ul>">Hyundai</button>
                         </div>
                     </div>
                     <div class="letter-block"  data-target="k">
                         <div class="mark-item-wrp">
-                            <a href="#" class="mark-item" data-target="5">Kia</a>
+                            <button class="mark-item" data-target="15" role="button"  data-toggle="popover" data-content="<ul class='mark-list-links'>
+                                <li><a href='#'>A4 Allroad</a></li>
+                                <li><a href='#'>A5</a></li>
+                                <li><a href='#'>Q5</a></li>
+                                <li><a href='#'>Q7</a></li>
+                                <li><a href='#'>Q8</a></li>
+                            </ul>">Kia</button>
                         </div>
                     </div>
                     <div class="letter-block"  data-target="l">
                         <div class="mark-item-wrp">
-                            <a href="#" class="mark-item" data-target="1">LADA (ВАЗ)</a>
+                            <button class="mark-item" data-target="15" role="button"  data-toggle="popover" data-content="<ul class='mark-list-links'>
+                                <li><a href='#'>A4 Allroad</a></li>
+                                <li><a href='#'>A5</a></li>
+                                <li><a href='#'>Q5</a></li>
+                                <li><a href='#'>Q7</a></li>
+                                <li><a href='#'>Q8</a></li>
+                            </ul>">LADA (ВАЗ)</button>
                         </div>
                         <div class="mark-item-wrp">
-                            <a href="#" class="mark-item" data-target="4">Lifan</a>
+                            <button class="mark-item" data-target="15" role="button"  data-toggle="popover" data-content="<ul class='mark-list-links'>
+                                <li><a href='#'>A4 Allroad</a></li>
+                                <li><a href='#'>A5</a></li>
+                                <li><a href='#'>Q5</a></li>
+                                <li><a href='#'>Q7</a></li>
+                                <li><a href='#'>Q8</a></li>
+                            </ul>">Lifan</button>
                         </div>
                     </div>
                     <div class="letter-block"  data-target="m">
                         <div class="mark-item-wrp">
-                            <a href="#" class="mark-item" data-target="7">Mazda (ВАЗ)</a>
+                            <button class="mark-item" data-target="7" role="button"  data-toggle="popover" data-content="<ul class='mark-list-links'>
+                                <li><a href='#'>A4 Allroad</a></li>
+                                <li><a href='#'>A5</a></li>
+                                <li><a href='#'>Q5</a></li>
+                                <li><a href='#'>Q7</a></li>
+                                <li><a href='#'>Q8</a></li>
+                            </ul>">Mazda (ВАЗ)</button>
                         </div>
                         <div class="mark-item-wrp">
-                            <a href="#" class="mark-item" data-target="3">Mercedes-Benz</a>
+                            <button class="mark-item" data-target="7" role="button"  data-toggle="popover" data-content="<ul class='mark-list-links'>
+                                <li><a href='#'>A4 Allroad</a></li>
+                                <li><a href='#'>A5</a></li>
+                                <li><a href='#'>Q5</a></li>
+                                <li><a href='#'>Q7</a></li>
+                                <li><a href='#'>Q8</a></li>
+                            </ul>">Mercedes-Benz</button>
                         </div>
                         <div class="mark-item-wrp">
-                            <a href="#" class="mark-item" data-target="6">Mitsubishi</a>
+                            <button class="mark-item" data-target="7" role="button"  data-toggle="popover" data-content="<ul class='mark-list-links'>
+                                <li><a href='#'>A4 Allroad</a></li>
+                                <li><a href='#'>A5</a></li>
+                                <li><a href='#'>Q5</a></li>
+                                <li><a href='#'>Q7</a></li>
+                                <li><a href='#'>Q8</a></li>
+                            </ul>">Mitsubishi</button>
                         </div>
                     </div>
                     <div class="letter-block"  data-target="n">
                         <div class="mark-item-wrp">
-                            <a href="#" class="mark-item" data-target="21">Nissan</a>
+                            <button class="mark-item" data-target="7" role="button"  data-toggle="popover" data-content="<ul class='mark-list-links'>
+                                <li><a href='#'>A4 Allroad</a></li>
+                                <li><a href='#'>A5</a></li>
+                                <li><a href='#'>Q5</a></li>
+                                <li><a href='#'>Q7</a></li>
+                                <li><a href='#'>Q8</a></li>
+                            </ul>">Nissan</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-6">
                     <div class="letter-block"  data-target="o">
                         <div class="mark-item-wrp">
-                            <a href="#" class="mark-item" data-target="13">Opel</a>
+                            <button class="mark-item" data-target="7" role="button"  data-toggle="popover" data-content="<ul class='mark-list-links'>
+                                <li><a href='#'>A4 Allroad</a></li>
+                                <li><a href='#'>A5</a></li>
+                                <li><a href='#'>Q5</a></li>
+                                <li><a href='#'>Q7</a></li>
+                                <li><a href='#'>Q8</a></li>
+                            </ul>">Opel</button>
                         </div>
                     </div>
                     <div class="letter-block"  data-target="p">
                         <div class="mark-item-wrp">
-                            <a href="#" class="mark-item" data-target="4">Peugeot</a>
+                            <button class="mark-item" data-target="7" role="button"  data-toggle="popover" data-content="<ul class='mark-list-links'>
+                                <li><a href='#'>A4 Allroad</a></li>
+                                <li><a href='#'>A5</a></li>
+                                <li><a href='#'>Q5</a></li>
+                                <li><a href='#'>Q7</a></li>
+                                <li><a href='#'>Q8</a></li>
+                            </ul>">Peugeot</button>
                         </div>
                         <div class="mark-item-wrp">
-                            <a href="#" class="mark-item" data-target="2">Porsche</a>
+                            <button class="mark-item" data-target="7" role="button"  data-toggle="popover" data-content="<ul class='mark-list-links'>
+                                <li><a href='#'>A4 Allroad</a></li>
+                                <li><a href='#'>A5</a></li>
+                                <li><a href='#'>Q5</a></li>
+                                <li><a href='#'>Q7</a></li>
+                                <li><a href='#'>Q8</a></li>
+                            </ul>">Porsche</button>
                         </div>
                     </div>
                     <div class="letter-block"  data-target="r">
                         <div class="mark-item-wrp">
-                            <a href="#" class="mark-item" data-target="7">Renault</a>
+                            <button class="mark-item" data-target="7" role="button"  data-toggle="popover" data-content="<ul class='mark-list-links'>
+                                <li><a href='#'>A4 Allroad</a></li>
+                                <li><a href='#'>A5</a></li>
+                                <li><a href='#'>Q5</a></li>
+                                <li><a href='#'>Q7</a></li>
+                                <li><a href='#'>Q8</a></li>
+                            </ul>">Renault</button>
                         </div>
                     </div>
                     <div class="letter-block"  data-target="s">
                         <div class="mark-item-wrp">
-                            <a href="#" class="mark-item" data-target="1">SEAT</a>
+                            <button class="mark-item" data-target="7" role="button"  data-toggle="popover" data-content="<ul class='mark-list-links'>
+                                <li><a href='#'>A4 Allroad</a></li>
+                                <li><a href='#'>A5</a></li>
+                                <li><a href='#'>Q5</a></li>
+                                <li><a href='#'>Q7</a></li>
+                                <li><a href='#'>Q8</a></li>
+                            </ul>">SEAT</button>
                         </div>
                         <div class="mark-item-wrp">
-                            <a href="#" class="mark-item" data-target="9">Skoda</a>
+                            <button class="mark-item" data-target="7" role="button"  data-toggle="popover" data-content="<ul class='mark-list-links'>
+                                <li><a href='#'>A4 Allroad</a></li>
+                                <li><a href='#'>A5</a></li>
+                                <li><a href='#'>Q5</a></li>
+                                <li><a href='#'>Q7</a></li>
+                                <li><a href='#'>Q8</a></li>
+                            </ul>">Skoda</button>
                         </div>
                         <div class="mark-item-wrp">
-                            <a href="#" class="mark-item" data-target="3">SsangYong</a>
+                            <button class="mark-item" data-target="7" role="button"  data-toggle="popover" data-content="<ul class='mark-list-links'>
+                                <li><a href='#'>A4 Allroad</a></li>
+                                <li><a href='#'>A5</a></li>
+                                <li><a href='#'>Q5</a></li>
+                                <li><a href='#'>Q7</a></li>
+                                <li><a href='#'>Q8</a></li>
+                            </ul>">SsangYong</button>
                         </div>
                         <div class="mark-item-wrp">
-                            <a href="#" class="mark-item" data-target="2">Subaru</a>
+                            <button class="mark-item" data-target="7" role="button"  data-toggle="popover" data-content="<ul class='mark-list-links'>
+                                <li><a href='#'>A4 Allroad</a></li>
+                                <li><a href='#'>A5</a></li>
+                                <li><a href='#'>Q5</a></li>
+                                <li><a href='#'>Q7</a></li>
+                                <li><a href='#'>Q8</a></li>
+                            </ul>">Subaru</button>
                         </div>
                         <div class="mark-item-wrp">
-                            <a href="#" class="mark-item" data-target="6">Suzuki</a>
+                            <button class="mark-item" data-target="7" role="button"  data-toggle="popover" data-content="<ul class='mark-list-links'>
+                                <li><a href='#'>A4 Allroad</a></li>
+                                <li><a href='#'>A5</a></li>
+                                <li><a href='#'>Q5</a></li>
+                                <li><a href='#'>Q7</a></li>
+                                <li><a href='#'>Q8</a></li>
+                            </ul>">Suzuki</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-6">
                     <div class="letter-block"  data-target="t">
                         <div class="mark-item-wrp">
-                            <a href="#" class="mark-item" data-target="7">Toyota</a>
+                            <button class="mark-item" data-target="7" role="button"  data-toggle="popover" data-content="<ul class='mark-list-links'>
+                                <li><a href='#'>A4 Allroad</a></li>
+                                <li><a href='#'>A5</a></li>
+                                <li><a href='#'>Q5</a></li>
+                                <li><a href='#'>Q7</a></li>
+                                <li><a href='#'>Q8</a></li>
+                            </ul>">Toyota</button>
                         </div>
                     </div>
                     <div class="letter-block"  data-target="v">
                         <div class="mark-item-wrp">
-                            <a href="#" class="mark-item" data-target="15">Volkswagen</a>
+                            <button class="mark-item" data-target="7" role="button"  data-toggle="popover" data-content="<ul class='mark-list-links'>
+                                <li><a href='#'>A4 Allroad</a></li>
+                                <li><a href='#'>A5</a></li>
+                                <li><a href='#'>Q5</a></li>
+                                <li><a href='#'>Q7</a></li>
+                                <li><a href='#'>Q8</a></li>
+                            </ul>">Volkswagen</button>
                         </div>
                         <div class="mark-item-wrp">
-                            <a href="#" class="mark-item" data-target="3">Vortex</a>
+                            <button class="mark-item" data-target="7" role="button"  data-toggle="popover" data-content="<ul class='mark-list-links'>
+                                <li><a href='#'>A4 Allroad</a></li>
+                                <li><a href='#'>A5</a></li>
+                                <li><a href='#'>Q5</a></li>
+                                <li><a href='#'>Q7</a></li>
+                                <li><a href='#'>Q8</a></li>
+                            </ul>">Vortex</button>
                         </div>
                     </div>
                     <div class="letter-block"  data-target="У">
                         <div class="mark-item-wrp">
-                            <a href="#" class="mark-item" data-target="4">УАЗ</a>
+                            <button class="mark-item" data-target="7" role="button"  data-toggle="popover" data-content="<ul class='mark-list-links'>
+                                <li><a href='#'>A4 Allroad</a></li>
+                                <li><a href='#'>A5</a></li>
+                                <li><a href='#'>Q5</a></li>
+                                <li><a href='#'>Q7</a></li>
+                                <li><a href='#'>Q8</a></li>
+                            </ul>">УАЗ</button>
                         </div>
                     </div>
                     <div class="all-models-wrp d-none d-sm-block">
@@ -301,7 +471,7 @@
                                 </div>
                                 <div class="bottom-part">
                                     <p class="propose-card-price">369 000 руб</p>
-                                    <div class="propose-card-btn"><span>заявка в кредит</span></div>
+                                    <a href="#" class="propose-card-btn"><span>заявка в кредит</span></a>
                                 </div>
                             </div>
                         </div>
@@ -332,7 +502,7 @@
                                 </div>
                                 <div class="bottom-part">
                                     <p class="propose-card-price">369 000 руб</p>
-                                    <div class="propose-card-btn"><span>заявка в кредит</span></div>
+                                    <a href="#" class="propose-card-btn"><span>заявка в кредит</span></a>
                                 </div>
                             </div>
                         </div>
@@ -363,7 +533,7 @@
                                 </div>
                                 <div class="bottom-part">
                                     <p class="propose-card-price">369 000 руб</p>
-                                    <div class="propose-card-btn"><span>заявка в кредит</span></div>
+                                    <a href="#" class="propose-card-btn"><span>заявка в кредит</span></a>
                                 </div>
                             </div>
                         </div>
@@ -394,7 +564,7 @@
                                 </div>
                                 <div class="bottom-part">
                                     <p class="propose-card-price">369 000 руб</p>
-                                    <div class="propose-card-btn"><span>заявка в кредит</span></div>
+                                    <a href="#" class="propose-card-btn"><span>заявка в кредит</span></a>
                                 </div>
                             </div>
                         </div>
@@ -440,7 +610,7 @@
                                     <p>Пробег: <span>111 000 км</span></p>
                                 </div>
                                 <p class="arrivals-card-price">369 000 руб</p>
-                                <div class="arrivals-card-btn"><span>заявка в кредит</span></div>
+                                <a href="#" class="arrivals-card-btn"><span>заявка в кредит</span></a>
                             </div>
                         </div>
                     </div>
@@ -456,7 +626,7 @@
                                     <p>Пробег: <span>111 000 км</span></p>
                                 </div>
                                 <p class="arrivals-card-price">369 000 руб</p>
-                                <div class="arrivals-card-btn"><span>заявка в кредит</span></div>
+                                <a href="#" class="arrivals-card-btn"><span>заявка в кредит</span></a>
                             </div>
                         </div>
                     </div>
@@ -472,7 +642,7 @@
                                     <p>Пробег: <span>111 000 км</span></p>
                                 </div>
                                 <p class="arrivals-card-price">369 000 руб</p>
-                                <div class="arrivals-card-btn"><span>заявка в кредит</span></div>
+                                <a href="#" class="arrivals-card-btn"><span>заявка в кредит</span></a>
                             </div>
                         </div>
                     </div>
@@ -488,7 +658,7 @@
                                     <p>Пробег: <span>111 000 км</span></p>
                                 </div>
                                 <p class="arrivals-card-price">369 000 руб</p>
-                                <div class="arrivals-card-btn"><span>заявка в кредит</span></div>
+                                <a href="#" class="arrivals-card-btn"><span>заявка в кредит</span></a>
                             </div>
                         </div>
                     </div>
@@ -504,7 +674,7 @@
                                     <p>Пробег: <span>111 000 км</span></p>
                                 </div>
                                 <p class="arrivals-card-price">369 000 руб</p>
-                                <div class="arrivals-card-btn"><span>заявка в кредит</span></div>
+                                <a href="#" class="arrivals-card-btn"><span>заявка в кредит</span></a>
                             </div>
                         </div>
                     </div>
@@ -533,19 +703,21 @@
                 <div class="col-lg-4 offset-lg-3 col-md-6 offset-md-0 col-12">
                     <div class="form-block-wrp">
                         <img class="form-car" src="../../build/img/form-img.png" alt="авто">
-                        <div class="form-block">
-                            <p class="form-block-title">У вас есть вопросы?</p>
-                            <p class="form-block-title form-block-title-secondary">Отправьте нам заявку!</p>
-                            <div class="form-block-field">
-                                <p class="form-block-subtitle">Имя</p>
-                                <input type="text" class="form-block-input">
+                        <form action="">
+                            <div class="form-block">
+                                <p class="form-block-title">У вас есть вопросы?</p>
+                                <p class="form-block-title form-block-title-secondary">Отправьте нам заявку!</p>
+                                <div class="form-block-field">
+                                    <p class="form-block-subtitle">Имя</p>
+                                    <input type="text" name="name" class="form-block-input">
+                                </div>
+                                <div class="form-block-field">
+                                    <p class="form-block-subtitle">Телефон</p>
+                                    <input type="tel" name="phone" class="form-block-input" placeholder="+7">
+                                </div>
+                                <input class="send-form-btn" type="submit" value="ОТПРАВИТЬ">
                             </div>
-                            <div class="form-block-field">
-                                <p class="form-block-subtitle">Телефон</p>
-                                <input type="text" class="form-block-input">
-                            </div>
-                            <div class="send-form-btn"><span>ОТПРАВИТЬ</span></div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
